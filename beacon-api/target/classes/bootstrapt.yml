@@ -1,0 +1,29 @@
+# port number
+server:
+  port: 10001
+
+# service name
+spring:
+  application:
+    name: beacon-api
+  # the environment
+  profiles:
+    active: dev
+  # nacos register address
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8080
+      # nacos config address:
+      config:
+        server-addr: localhost:8080
+        file-extension: yml
+        # beacon-api-dev.yml
+
+# rabbitMQ connection information
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: root
+  password: wupeng
+  virtual-host: /
