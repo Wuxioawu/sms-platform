@@ -19,6 +19,6 @@ public class SingleSendForm {
      */
     private String uid;
     @Range(min = 0, max = 2, message = "the messageType must be from 0 to 2")
-    @NotNull(message = "The messageContent cannot be empty")
+    @NotNull(message = "The messageType cannot be empty")
     private Integer messageType;
 }
