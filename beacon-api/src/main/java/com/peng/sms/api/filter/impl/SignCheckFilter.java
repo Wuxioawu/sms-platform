@@ -2,18 +2,19 @@ package com.peng.sms.api.filter.impl;
 
 import com.peng.sms.api.filter.CheckFilter;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.ObjectError;
 
 /**
- * check the requestion paramenter ApiKey
+ * check the requestion paramenter Sign
  */
-@Service(value = "apikey")
+@Service(value = "sign")
 @Slf4j
-public class ApikeyCheckFilter implements CheckFilter {
-
+public class SignCheckFilter implements CheckFilter {
+    
     @Override
     public void check(ObjectError obj) {
-        log.info("ApikeyCheckFilter check");
+       log.info("SignCheckFilter check");
     }
 }

@@ -6,14 +6,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.validation.ObjectError;
 
 /**
- * check the requestion paramenter ApiKey
+ * check the requestion paramenter template
+ * the message the contant
  */
-@Service(value = "apikey")
+@Service(value = "template")
 @Slf4j
-public class ApikeyCheckFilter implements CheckFilter {
-
+public class TemplateCheckFilter implements CheckFilter {
+    
     @Override
     public void check(ObjectError obj) {
-        log.info("ApikeyCheckFilter check");
+       log.info("TemplateCheckFilter check");
     }
 }
