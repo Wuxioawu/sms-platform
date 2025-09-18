@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        grpc-enabled: false
+      discovery:
+        server-addr: localhost:8848
+        grpc-enabled: false
+  config:
+    import:
+      - nacos:beacon-api-dev.yml?refreshEnabled=true
+
