@@ -13,7 +13,7 @@ import org.springframework.validation.ObjectError;
 public class ApikeyCheckFilter implements CheckFilter {
 
     @Override
-    public void check(ObjectError obj) {
+    public void check(Object obj) {
         log.info("ApikeyCheckFilter check");
     }
 }

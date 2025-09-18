@@ -14,7 +14,7 @@ import org.springframework.validation.ObjectError;
 public class SignCheckFilter implements CheckFilter {
     
     @Override
-    public void check(ObjectError obj) {
+    public void check(Object obj) {
        log.info("SignCheckFilter check");
     }
 }
