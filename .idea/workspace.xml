@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-cache/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-cache/src/main/java/com/peng/sms/CacheStartApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-cache/src/main/java/com/peng/sms/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-cache/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-cache/src/main/java/com/peng/sms/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/SmsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/SmsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/SmsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
 }]]></component>
@@ -196,7 +186,7 @@
       <updated>1758096777255</updated>
       <workItem from="1758096778348" duration="9000" />
       <workItem from="1758096789962" duration="4870000" />
-      <workItem from="1758263265322" duration="5095000" />
+      <workItem from="1758263265322" duration="6639000" />
     </task>
     <servers />
   </component>
