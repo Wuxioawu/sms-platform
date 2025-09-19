@@ -29,6 +29,10 @@ public class SmsController {
             return R.error(SmsCodeEnum.PARAMETER_ERROR.getCode(), msg);
         }
 
+        // build the submit ,some check process.
+
+
+        // send to MQ, convert to strategy modules
         return R.ok();
     }
 }

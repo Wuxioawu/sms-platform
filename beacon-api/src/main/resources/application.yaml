@@ -1,4 +1,8 @@
 spring:
+  application:
+    name: beacon-api
+  profiles:
+    active: dev
   cloud:
     nacos:
       config:

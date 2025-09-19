@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="beacon-api" />
+        <module name="beacon-cache" />
         <module name="beacon-test" />
+        <module name="beacon-api" />
         <module name="beacon-common" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="beacon-api" options="-parameters" />
+      <module name="beacon-cache" options="-parameters" />
       <module name="beacon-cloud" options="" />
       <module name="beacon-common" options="-parameters" />
       <module name="beacon-test" options="-parameters" />

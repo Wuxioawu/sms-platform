@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/peng/sms/model/StandardSubmit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-cache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-cache/src/main/java/com/peng/sms/CacheStartApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-cache/src/main/java/com/peng/sms/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-cache/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/SmsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/SmsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/SmsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,14 +29,17 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -51,41 +61,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.CheckFilterContextTest.check.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.beacon-api [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.beacon-cloud [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.APIStarterAPP (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.APIStarterAPP.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.BeaconTestApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/pen_warren/IdeaProjects/beacon-cloud/beacon-api/src/main/java/com/peng/sms/api/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JUnit.CheckFilterContextTest.check.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.beacon-api [clean].executor": "Run",
+    "Maven.beacon-cloud [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.APIStarterAPP (1).executor": "Run",
+    "Spring Boot.APIStarterAPP.executor": "Run",
+    "Spring Boot.BeaconTestApplication.executor": "Run",
+    "Spring Boot.CacheStartApp.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/pen_warren/IdeaProjects/beacon-cloud/beacon-cache/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/pen_warren/IdeaProjects/beacon-cloud/beacon-cache/src/main/java/com/peng/sms/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/beacon-cache/src/main/resources" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -96,7 +112,17 @@
       <recent name="com.peng.sms.api.filter.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.APIStarterAPP (1)">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CacheStartApp">
     <configuration name="CheckFilterContextTest.check" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beacon-api" />
       <extension name="coverage">
@@ -126,21 +152,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeaconTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="beacon-test" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.peng.beacontest.BeaconTestApplication" />
+    <configuration name="CacheStartApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="beacon-cache" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.peng.sms.CacheStartApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peng.sms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.CheckFilterContextTest.check" />
-      <item itemvalue="Spring Boot.BeaconTestApplication" />
+      <item itemvalue="Spring Boot.CacheStartApp" />
       <item itemvalue="Spring Boot.APIStarterAPP (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CacheStartApp" />
         <item itemvalue="Spring Boot.APIStarterAPP (1)" />
         <item itemvalue="JUnit.CheckFilterContextTest.check" />
       </list>
@@ -164,7 +196,7 @@
       <updated>1758096777255</updated>
       <workItem from="1758096778348" duration="9000" />
       <workItem from="1758096789962" duration="4870000" />
-      <workItem from="1758263265322" duration="1565000" />
+      <workItem from="1758263265322" duration="5095000" />
     </task>
     <servers />
   </component>
