@@ -16,6 +16,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>beacon-api</module>
+        <module>beacon-common</module>
     </modules>
 
     <properties>
@@ -40,6 +41,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
