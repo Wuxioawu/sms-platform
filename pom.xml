@@ -6,8 +6,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.4</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.3.12.RELEASE</version>
+        <relativePath />
     </parent>
 
     <groupId>com.peng.sms</groupId>
@@ -21,9 +21,9 @@
     </modules>
 
     <properties>
-        <spring.boot.version>3.2.4</spring.boot.version>
-        <spring.cloud-version>2023.0.1</spring.cloud-version>
-        <spring.cloud.alibaba-version>2023.0.1.0</spring.cloud.alibaba-version>
+        <spring.cloud-version>Hoxton.SR12</spring.cloud-version>
+        <spring.cloud.alibaba-version>2.2.6.RELEASE</spring.cloud.alibaba-version>
+        <horse-version>1.0.0</horse-version>
     </properties>
 
     <dependencyManagement>
@@ -39,6 +39,14 @@
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${spring.cloud.alibaba-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.msb.cloud</groupId>
+                <artifactId>horse-framework-starters</artifactId>
+                <version>${horse-version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

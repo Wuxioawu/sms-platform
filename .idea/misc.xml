@@ -11,10 +11,12 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/beacon-test/pom.xml" />
+        <option value="$PROJECT_DIR$/horse-framework-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/horse-framwork-start/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="homebrew-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="zulu-1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

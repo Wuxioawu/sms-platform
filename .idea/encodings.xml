@@ -5,6 +5,12 @@
     <file url="file://$PROJECT_DIR$/beacon-cache/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/beacon-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/beacon-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/horse-framework-starter/horse-framework-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/horse-framework-starter/horse-framework-starter-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/horse-framework-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/horse-framework-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/horse-framwork-start/horse-framwork-start-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/horse-framwork-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

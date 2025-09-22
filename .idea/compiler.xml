@@ -14,6 +14,11 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="beacon-test" target="17" />
+      <module name="horse-framework-common" target="17" />
+      <module name="horse-framework-starter" target="17" />
+      <module name="horse-framework-starter-redis" target="17" />
+      <module name="horse-framwork-start" target="17" />
+      <module name="horse-framwork-start-redis" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -23,6 +28,11 @@
       <module name="beacon-cloud" options="" />
       <module name="beacon-common" options="-parameters" />
       <module name="beacon-test" options="-parameters" />
+      <module name="horse-framework-common" options="-parameters" />
+      <module name="horse-framework-starter" options="" />
+      <module name="horse-framework-starter-redis" options="-parameters" />
+      <module name="horse-framwork-start" options="-parameters" />
+      <module name="horse-framwork-start-redis" options="-parameters" />
     </option>
   </component>
 </project>
