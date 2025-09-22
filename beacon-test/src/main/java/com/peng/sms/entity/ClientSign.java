@@ -174,4 +174,26 @@ public class ClientSign {
     this.extend4 = extend4;
   }
 
+  @Override
+  public String toString() {
+    return "ClientSign{" +
+            "id=" + id +
+            ", clientId=" + clientId +
+            ", signInfo='" + signInfo + '\'' +
+            ", signState=" + signState +
+            ", signType=" + signType +
+            ", businessWeb='" + businessWeb + '\'' +
+            ", proveDescr='" + proveDescr + '\'' +
+            ", proveFile='" + proveFile + '\'' +
+            ", created=" + created +
+            ", createId=" + createId +
+            ", updated=" + updated +
+            ", updateId=" + updateId +
+            ", isDelete=" + isDelete +
+            ", extend1='" + extend1 + '\'' +
+            ", extend2='" + extend2 + '\'' +
+            ", extend3='" + extend3 + '\'' +
+            ", extend4='" + extend4 + '\'' +
+            '}';
+  }
 }
