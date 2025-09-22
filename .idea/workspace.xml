@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/mapper/ClientBalanceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/mapper/ClientSignMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/mapper/ClientTemplateMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientBalanceMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientSignMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientTemplateMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/client/BeaconCacheClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/client/BeaconCacheClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/APIStarterAPP.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/APIStarterAPP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/SmsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/SmsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientSign.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientSign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientBusinessMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientBusinessMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/classes/com/peng/sms/entity/ClientSign.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/target/classes/com/peng/sms/entity/ClientSign.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientBusinessMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientBusinessMapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientBalance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientTemplateMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientTemplateMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/target/classes/com/peng/sms/entity/ClientBalance.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/target/classes/com/peng/sms/entity/ClientBalance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/target/classes/com/peng/sms/entity/ClientTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/target/classes/com/peng/sms/entity/ClientTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientTemplateMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientTemplateMapperTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +62,7 @@
     "JUnit.CheckFilterContextTest.check.executor": "Run",
     "JUnit.ClientBusinessMapperTest.findById.executor": "Run",
     "JUnit.ClientSignMapperTest.findByClientId.executor": "Run",
+    "JUnit.ClientTemplateMapperTest.findBySignId.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.beacon-api [clean].executor": "Run",
     "Maven.beacon-cache [clean].executor": "Run",
@@ -149,7 +142,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClientSignMapperTest.findByClientId">
+  <component name="RunManager" selected="JUnit.ClientTemplateMapperTest.findBySignId">
     <configuration name="ClientBusinessMapperTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beacon-test" />
       <extension name="coverage">
@@ -182,25 +175,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClientTemplateMapperTest.findBySignId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beacon-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peng.sms.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.ClientTemplateMapperTest" />
+      <option name="METHOD_NAME" value="findBySignId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="APIStarterAPP (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="beacon-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.peng.sms.api.APIStarterAPP" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.peng.sms.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CacheStartApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="beacon-cache" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.peng.sms.CacheStartApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.peng.sms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,17 +220,17 @@
     <list>
       <item itemvalue="JUnit.ClientBusinessMapperTest.findById" />
       <item itemvalue="JUnit.ClientSignMapperTest.findByClientId" />
+      <item itemvalue="JUnit.ClientTemplateMapperTest.findBySignId" />
       <item itemvalue="Spring Boot.TestStartApp" />
-      <item itemvalue="Spring Boot.CacheStartApp" />
       <item itemvalue="Spring Boot.APIStarterAPP (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClientTemplateMapperTest.findBySignId" />
+        <item itemvalue="Spring Boot.TestStartApp" />
         <item itemvalue="JUnit.ClientSignMapperTest.findByClientId" />
         <item itemvalue="JUnit.ClientBusinessMapperTest.findById" />
         <item itemvalue="Spring Boot.APIStarterAPP (1)" />
-        <item itemvalue="Spring Boot.TestStartApp" />
-        <item itemvalue="Spring Boot.CacheStartApp" />
       </list>
     </recent_temporary>
   </component>

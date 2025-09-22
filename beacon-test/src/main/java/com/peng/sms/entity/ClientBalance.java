@@ -123,4 +123,21 @@ public class ClientBalance {
         this.extend4 = extend4;
     }
 
+    @Override
+    public String toString() {
+        return "ClientBalance{" +
+                "id=" + id +
+                ", clientId=" + clientId +
+                ", balance=" + balance +
+                ", created=" + created +
+                ", createId=" + createId +
+                ", updated=" + updated +
+                ", updateId=" + updateId +
+                ", isDelete=" + isDelete +
+                ", extend1='" + extend1 + '\'' +
+                ", extend2='" + extend2 + '\'' +
+                ", extend3='" + extend3 + '\'' +
+                ", extend4='" + extend4 + '\'' +
+                '}';
+    }
 }
