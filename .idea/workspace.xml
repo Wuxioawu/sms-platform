@@ -5,58 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-api/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-api/target/beacon-api-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-api/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-api/target/surefire-reports/TEST-com.peng.sms.api.filter.CheckFilterContextTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-api/target/surefire-reports/com.peng.sms.api.filter.CheckFilterContextTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/target/beacon-common-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/client/BeaconCacheClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.java-version" beforeDir="false" afterPath="$PROJECT_DIR$/.java-version" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/SmsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/APIStarterAPP.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/APIStarterAPP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/SmsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/SmsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/enums/SmsCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/enums/SmsCodeEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/CheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/CheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/CheckFilterContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/CheckFilterContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/ApikeyCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/ApikeyCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/FeeCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/FeeCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/IPCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/IPCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/MobileCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/MobileCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/SignCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/SignCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/TemplateCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/TemplateCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/form/SingleSendForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/form/SingleSendForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/uitls/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/uitls/R.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/vo/ResultVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/vo/ResultVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/test-classes/com/peng/sms/api/filter/CheckFilterContextTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/test-classes/com/peng/sms/api/filter/CheckFilterContextTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/src/main/java/com/peng/sms/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/src/main/java/com/peng/sms/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/src/main/java/com/peng/sms/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/src/main/java/com/peng/sms/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/target/classes/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/target/classes/com/peng/sms/CacheStartApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/target/classes/com/peng/sms/config/RedisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/target/classes/com/peng/sms/controller/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/target/classes/com/peng/sms/model/StandardSubmit.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/target/classes/com/peng/sms/model/StandardSubmit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/APIStarterAPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/APIStarterAPP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
