@@ -13,7 +13,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="beacon-test" target="17" />
       <module name="horse-framework-common" target="17" />
       <module name="horse-framework-starter" target="17" />
       <module name="horse-framework-starter-redis" target="17" />

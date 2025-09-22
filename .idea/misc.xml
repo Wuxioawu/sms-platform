@@ -10,7 +10,6 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/beacon-test/pom.xml" />
         <option value="$PROJECT_DIR$/horse-framework-starter/pom.xml" />
         <option value="$PROJECT_DIR$/horse-framwork-start/pom.xml" />
       </set>

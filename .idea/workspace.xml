@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/client/BeaconCacheClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/TestStartApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientBalance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientSign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/APIStarterAPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/APIStarterAPP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +81,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.APIStarterAPP (1).executor": "Run",
     "Spring Boot.APIStarterAPP.executor": "Run",
     "Spring Boot.BeaconTestApplication.executor": "Run",
@@ -82,31 +91,39 @@
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/pen_warren/IdeaProjects/beacon-cloud/horse-framework-starter/horse-framework-common",
+    "last_opened_file_path": "/Users/pen_warren/IdeaProjects/beacon-cloud/beacon-test/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/pen_warren/IdeaProjects/beacon-cloud/horse-framework-starter/horse-framework-common/src/main/java/com/peng/sms/Main.java",
+    "onboarding.tips.debug.path": "/Users/pen_warren/IdeaProjects/beacon-cloud/beacon-test/src/main/java/com/peng/sms/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.26551723",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/beacon-test/src/main/resources" />
       <recent name="$PROJECT_DIR$/horse-framework-starter/horse-framework-common" />
       <recent name="$PROJECT_DIR$/horse-framework-starter" />
       <recent name="$PROJECT_DIR$/horse-framework-starter/horse-framework-starter-redis" />
       <recent name="$PROJECT_DIR$/horse-framwork-start/horse-framwork-start-redis" />
-      <recent name="$PROJECT_DIR$/beacon-cache/src/main/resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.peng.sms.api.filter" />
@@ -249,6 +266,11 @@
           <url>file://$PROJECT_DIR$/horse-framework-starter/horse-framework-common/src/main/java/com/peng/sms/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/TestStartApp.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

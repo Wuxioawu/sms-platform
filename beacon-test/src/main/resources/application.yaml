@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: beacon-test
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        grpc-enabled: false
+      discovery:
+        server-addr: localhost:8848
+        grpc-enabled: false
+  config:
+    import:
+      - nacos:beacon-cache-dev.yml?refreshEnabled=true
+    # datasource
+    datasource:
+      driver-class-name: org.gjt.mm.mysql.Driver
+      url: jdbc:mysql://localhost:3306/sms_platform?characterEncoding=utf-8
+      username: root
+      password: wupeng
+
+server:
+  port: 18003
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
