@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity/ClientTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientTemplateMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientTemplateMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/classes/com/peng/sms/entity/ClientBalance.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/target/classes/com/peng/sms/entity/ClientBalance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/classes/com/peng/sms/entity/ClientTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/target/classes/com/peng/sms/entity/ClientTemplate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientTemplateMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientTemplateMapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientBalanceMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientBalanceMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +136,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClientTemplateMapperTest.findBySignId">
+  <component name="RunManager" selected="JUnit.ClientBalanceMapperTest.findByClientId">
+    <configuration name="ClientBalanceMapperTest.findByClientId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beacon-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peng.sms.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.ClientBalanceMapperTest" />
+      <option name="METHOD_NAME" value="findByClientId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientBusinessMapperTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beacon-test" />
       <extension name="coverage">
@@ -191,19 +201,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APIStarterAPP (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="beacon-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.peng.sms.api.APIStarterAPP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.peng.sms.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestStartApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="beacon-test" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.peng.sms.TestStartApp" />
@@ -218,19 +215,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ClientBalanceMapperTest.findByClientId" />
       <item itemvalue="JUnit.ClientBusinessMapperTest.findById" />
       <item itemvalue="JUnit.ClientSignMapperTest.findByClientId" />
       <item itemvalue="JUnit.ClientTemplateMapperTest.findBySignId" />
       <item itemvalue="Spring Boot.TestStartApp" />
-      <item itemvalue="Spring Boot.APIStarterAPP (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClientBalanceMapperTest.findByClientId" />
         <item itemvalue="JUnit.ClientTemplateMapperTest.findBySignId" />
         <item itemvalue="Spring Boot.TestStartApp" />
         <item itemvalue="JUnit.ClientSignMapperTest.findByClientId" />
         <item itemvalue="JUnit.ClientBusinessMapperTest.findById" />
-        <item itemvalue="Spring Boot.APIStarterAPP (1)" />
       </list>
     </recent_temporary>
   </component>
