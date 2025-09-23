@@ -45,14 +45,14 @@ public class SignCheckFilter implements CheckFilter {
         log.info("{interface module} ->  {check sign filter} ->  is running");
 
         //1. if have the sign info
-        String sign = submit.getText();
-        if (!sign.contains(ApiConstant.SIGN_PREFIX) || !sign.contains(ApiConstant.SIGN_SUFFIX)) {
+        String text = submit.getText();
+        if (!text.contains(ApiConstant.SIGN_PREFIX) || !text.contains(ApiConstant.SIGN_SUFFIX)) {
             log.info("{interface module} ->  {check sign filter} ->  no have sign info");
             throw new ApiException(ExceptionEnums.ERROR_SIGN);
         }
 
         //2. sub the sign content from the text
-        String signText = sign.substring(SIGN_START_INDEX, sign.indexOf(ApiConstant.SIGN_SUFFIX));
+        String signText = text.substring(SIGN_START_INDEX, text.indexOf(ApiConstant.SIGN_SUFFIX));
         if (StringUtils.isEmpty(signText)) {
             log.info("{interface module} ->  {check sign filter} ->  the sign text is empty");
             throw new ApiException(ExceptionEnums.ERROR_SIGN);
@@ -70,13 +70,13 @@ public class SignCheckFilter implements CheckFilter {
             if (signText.equals(map.get(CLIENT_SIGN_INFO))) {
                 submit.setSign(signText);
                 submit.setSignId(Long.parseLong(map.get(SIGN_ID) + ""));
-                log.info("{interface module} ->  {check sign filter} ->  find sign info : {}", sign);
+                log.info("{interface module} ->  {check sign filter} ->  find sign info : {}", text);
                 return;
             }
         }
 
         //5. no have match sign
-        log.info("{interface module} ->  {check sign filter} ->  no sign can be used : {}", sign);
+        log.info("{interface module} ->  {check sign filter} ->  no sign can be used : {}", text);
         throw new ApiException(ExceptionEnums.ERROR_SIGN);
     }
 }

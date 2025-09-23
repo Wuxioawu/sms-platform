@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/IPCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/IPCheckFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/SignCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/SignCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/IPCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/IPCheckFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/TemplateCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/TemplateCheckFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/SignCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/SignCheckFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/TemplateCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/TemplateCheckFilter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +79,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.APIStarterAPP (1).executor": "Debug",
-    "Spring Boot.APIStarterAPP.executor": "Run",
+    "Spring Boot.APIStarterAPP (1).executor": "Run",
+    "Spring Boot.APIStarterAPP.executor": "Debug",
     "Spring Boot.BeaconTestApplication.executor": "Run",
     "Spring Boot.CacheStartApp.executor": "Run",
     "Spring Boot.TestStartApp.executor": "Run",
@@ -141,7 +141,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClientBalanceMapperTest.findByClientId">
+  <component name="RunManager" selected="Spring Boot.APIStarterAPP">
     <configuration name="ClientBalanceMapperTest.findByClientId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beacon-test" />
       <extension name="coverage">
@@ -153,22 +153,6 @@
       <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
       <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.ClientBalanceMapperTest" />
       <option name="METHOD_NAME" value="findByClientId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientBusinessMapperTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="beacon-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.peng.sms.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.ClientBusinessMapperTest" />
-      <option name="METHOD_NAME" value="findById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -206,6 +190,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="APIStarterAPP" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="beacon-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.peng.sms.api.APIStarterAPP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peng.sms.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestStartApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="beacon-test" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.peng.sms.TestStartApp" />
@@ -221,18 +218,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ClientBalanceMapperTest.findByClientId" />
-      <item itemvalue="JUnit.ClientBusinessMapperTest.findById" />
       <item itemvalue="JUnit.ClientSignMapperTest.findByClientId" />
       <item itemvalue="JUnit.ClientTemplateMapperTest.findBySignId" />
+      <item itemvalue="Spring Boot.APIStarterAPP" />
       <item itemvalue="Spring Boot.TestStartApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.APIStarterAPP" />
         <item itemvalue="Spring Boot.TestStartApp" />
         <item itemvalue="JUnit.ClientBalanceMapperTest.findByClientId" />
         <item itemvalue="JUnit.ClientTemplateMapperTest.findBySignId" />
         <item itemvalue="JUnit.ClientSignMapperTest.findByClientId" />
-        <item itemvalue="JUnit.ClientBusinessMapperTest.findById" />
       </list>
     </recent_temporary>
   </component>
@@ -311,9 +308,9 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/SignCheckFilter.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/TemplateCheckFilter.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
