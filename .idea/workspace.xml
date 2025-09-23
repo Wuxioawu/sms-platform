@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/advice/ApiExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/peng/sms/enums/ExceptionEnums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/peng/sms/exception/ApiException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/ApikeyCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/ApikeyCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/uitls/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/uitls/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/IPCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/IPCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/IPCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/IPCheckFilter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.APIStarterAPP (1).executor": "Run",
+    "Spring Boot.APIStarterAPP (1).executor": "Debug",
     "Spring Boot.APIStarterAPP.executor": "Run",
     "Spring Boot.BeaconTestApplication.executor": "Run",
     "Spring Boot.CacheStartApp.executor": "Run",
@@ -311,17 +308,19 @@
           <line>13</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/CheckFilter.java</url>
-          <line>9</line>
-          <properties class="com.peng.sms.api.filter.CheckFilter" method="check">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="11" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/IPCheckFilter.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.peng.sms.model.StandardSubmit" memberName="realIP" />
+        <PinnedItemInfo parentTag="com.peng.sms.model.StandardSubmit" memberName="ip" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="request.getHeaderNames()" language="JAVA" />
