@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/uitls/PhoneFormatCheckUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/SignCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/SignCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/TemplateCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/TemplateCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/SignCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/SignCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/TemplateCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/TemplateCheckFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/CheckFilterContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/CheckFilterContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/MobileCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/MobileCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/MobileCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/MobileCheckFilter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.APIStarterAPP (1).executor": "Run",
-    "Spring Boot.APIStarterAPP.executor": "Debug",
+    "Spring Boot.APIStarterAPP.executor": "Run",
     "Spring Boot.BeaconTestApplication.executor": "Run",
     "Spring Boot.CacheStartApp.executor": "Run",
     "Spring Boot.TestStartApp.executor": "Run",
@@ -306,11 +306,6 @@
           <url>file://$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/TestStartApp.java</url>
           <line>13</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/TemplateCheckFilter.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

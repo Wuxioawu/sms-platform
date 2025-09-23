@@ -15,7 +15,7 @@ public class CheckFilterContext {
     @Autowired
     private Map<String, CheckFilter> checkFilters;
 
-    @Value("${filters:apikey,ip,sign,template}")
+    @Value("${filters:apikey,ip,sign,template,mobile,fee}")
     private String filters;
 
     /**
