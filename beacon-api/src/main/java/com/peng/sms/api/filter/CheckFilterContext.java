@@ -1,5 +1,6 @@
 package com.peng.sms.api.filter;
 
+import com.peng.sms.model.StandardSubmit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -20,12 +21,12 @@ public class CheckFilterContext {
     /**
      * to manage the order of the check
      */
-    public void check(Object object) {
+    public void check(StandardSubmit submit) {
         // split the filters base on ,
         String[] checkItems = filters.split(",");
 
         for (String items : checkItems) {
-            checkFilters.get(items).check(object);
+            checkFilters.get(items).check(submit);
         }
     }
 }

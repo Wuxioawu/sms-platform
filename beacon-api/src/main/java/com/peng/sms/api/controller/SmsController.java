@@ -1,12 +1,14 @@
 package com.peng.sms.api.controller;
 
 import com.peng.sms.api.enums.SmsCodeEnum;
+import com.peng.sms.api.filter.CheckFilterContext;
 import com.peng.sms.api.form.SingleSendForm;
 import com.peng.sms.api.uitls.R;
 import com.peng.sms.api.vo.ResultVO;
 import com.peng.sms.model.StandardSubmit;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.validation.BindingResult;
@@ -29,6 +31,9 @@ public class SmsController {
 
     @Value("${headers}")
     private String headers;
+
+    @Autowired
+    private CheckFilterContext checkFilterContext;
 
     private final String UNKNOW = "unknow";
     private final String X_FORWARDED_FOR = "x-forwarded-for";
@@ -53,6 +58,8 @@ public class SmsController {
         submit.setText(singleSendForm.getMessageContent());
         submit.setState(singleSendForm.getMessageType());
         submit.setUid(singleSendForm.getUid());
+
+        checkFilterContext.check(submit);
 
         // send to MQ, convert to strategy modules
 
