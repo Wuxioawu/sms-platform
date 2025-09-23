@@ -7,7 +7,9 @@
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/IPCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/IPCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/SignCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/SignCheckFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/IPCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/IPCheckFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/SignCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/SignCheckFilter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,9 +311,9 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/IPCheckFilter.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/SignCheckFilter.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

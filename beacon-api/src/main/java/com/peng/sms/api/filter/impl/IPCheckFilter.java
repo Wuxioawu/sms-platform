@@ -35,7 +35,7 @@ public class IPCheckFilter implements CheckFilter {
         // check the ip adress, according the apikey and ipaddress
         String ip = cacheClient.hgetString(CacheConstant.CLIENT_BUSINESS + submit.getApikey(), IP_ADDRESS);
 
-        if (submit.getIp().isEmpty()) {
+        if (submit.getIp() == null) {
             submit.setIp(new ArrayList<>());
         }
         submit.getIp().add(ip);
