@@ -59,7 +59,7 @@ public class FeeCheckFilter implements CheckFilter {
             submit.setFee(ApiConstant.SINGLE_FEE * strip);
         }
 
-        long balance = (Long) cacheClient.hget(CacheConstant.CLIENT_BALANCE + submit.getClientId(), BALANCE);
+        long balance = ((Integer) cacheClient.hget(CacheConstant.CLIENT_BALANCE + submit.getClientId(), BALANCE)).longValue();
 
         if (balance >= submit.getFee()) {
             log.info("{interface module} ->  {check fee filter} -> the fee is enough");

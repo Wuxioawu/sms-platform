@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/peng/sms/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/peng/sms/util/SnowFlakeUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/FeeCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/FeeCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/FeeCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/filter/impl/FeeCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientBalanceMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientBalanceMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientBalanceMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientBalanceMapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,61 +54,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.CheckFilterContextTest.check.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ClientBalanceMapperTest.findByClientId.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ClientBusinessMapperTest.findById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ClientSignMapperTest.findByClientId.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ClientTemplateMapperTest.findBySignId.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.beacon-api [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.beacon-cache [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.beacon-cache [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.beacon-cloud [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.beacon-cloud [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.beacon-cloud [site].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.beacon-cloud [validate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.horse-framework-common [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.horse-framework-common [install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.APIStarterAPP (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.APIStarterAPP.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.BeaconTestApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CacheStartApp.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.TestStartApp.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pen_warren/IdeaProjects/beacon-cloud/beacon-test/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/pen_warren/IdeaProjects/beacon-cloud/beacon-test/src/main/java/com/peng/sms/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.26551723&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JUnit.CheckFilterContextTest.check.executor": "Run",
+    "JUnit.ClientBalanceMapperTest.findByClientId.executor": "Run",
+    "JUnit.ClientBusinessMapperTest.findById.executor": "Run",
+    "JUnit.ClientSignMapperTest.findByClientId.executor": "Run",
+    "JUnit.ClientTemplateMapperTest.findBySignId.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.beacon-api [clean].executor": "Run",
+    "Maven.beacon-cache [clean].executor": "Run",
+    "Maven.beacon-cache [install].executor": "Run",
+    "Maven.beacon-cloud [clean].executor": "Run",
+    "Maven.beacon-cloud [install].executor": "Run",
+    "Maven.beacon-cloud [site].executor": "Run",
+    "Maven.beacon-cloud [validate].executor": "Run",
+    "Maven.horse-framework-common [clean].executor": "Run",
+    "Maven.horse-framework-common [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.APIStarterAPP (1).executor": "Run",
+    "Spring Boot.APIStarterAPP.executor": "Run",
+    "Spring Boot.BeaconTestApplication.executor": "Run",
+    "Spring Boot.CacheStartApp.executor": "Run",
+    "Spring Boot.TestStartApp.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/pen_warren/IdeaProjects/beacon-cloud/beacon-test/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/pen_warren/IdeaProjects/beacon-cloud/beacon-test/src/main/java/com/peng/sms/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.26551723",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/beacon-test/src/main/resources" />
@@ -223,10 +222,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.APIStarterAPP" />
         <item itemvalue="JUnit.ClientBalanceMapperTest.findByClientId" />
         <item itemvalue="Spring Boot.TestStartApp" />
         <item itemvalue="Spring Boot.CacheStartApp" />
-        <item itemvalue="Spring Boot.APIStarterAPP" />
         <item itemvalue="JUnit.ClientTemplateMapperTest.findBySignId" />
       </list>
     </recent_temporary>
@@ -250,7 +249,7 @@
       <workItem from="1758096778348" duration="9000" />
       <workItem from="1758096789962" duration="4870000" />
       <workItem from="1758263265322" duration="6639000" />
-      <workItem from="1758650996967" duration="2666000" />
+      <workItem from="1758650996967" duration="5014000" />
     </task>
     <servers />
   </component>
@@ -305,6 +304,11 @@
           <url>file://$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/TestStartApp.java</url>
           <line>13</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/FeeCheckFilter.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
