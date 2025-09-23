@@ -1,6 +1,7 @@
 package com.peng.sms.api.uitls;
 
 import com.peng.sms.api.vo.ResultVO;
+import com.peng.sms.exception.ApiException;
 
 public class R {
 
@@ -18,4 +19,10 @@ public class R {
         return resultVO;
     }
 
+    public static ResultVO error(ApiException e) {
+        ResultVO resultVO = new ResultVO();
+        resultVO.setCode(e.getCode());
+        resultVO.setMsg(e.getMessage());
+        return resultVO;
+    }
 }

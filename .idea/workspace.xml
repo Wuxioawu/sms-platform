@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/peng/sms/constant/ApiConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/peng/sms/constant/CacheConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/peng/sms/constant/SmsConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/advice/ApiExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/peng/sms/enums/ExceptionEnums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/peng/sms/exception/ApiException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/client/BeaconCacheClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/client/BeaconCacheClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/SmsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/CheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/CheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/CheckFilterContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/CheckFilterContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/ApikeyCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/ApikeyCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/FeeCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/FeeCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/IPCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/IPCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/MobileCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/MobileCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/SignCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/SignCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/TemplateCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/filter/impl/TemplateCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/uitls/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/uitls/R.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +22,8 @@
       <list>
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -237,9 +229,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.TestStartApp" />
         <item itemvalue="JUnit.ClientBalanceMapperTest.findByClientId" />
         <item itemvalue="JUnit.ClientTemplateMapperTest.findBySignId" />
-        <item itemvalue="Spring Boot.TestStartApp" />
         <item itemvalue="JUnit.ClientSignMapperTest.findByClientId" />
         <item itemvalue="JUnit.ClientBusinessMapperTest.findById" />
       </list>
