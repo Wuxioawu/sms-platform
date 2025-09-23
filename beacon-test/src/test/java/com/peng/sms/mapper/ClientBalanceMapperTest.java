@@ -32,7 +32,7 @@ class ClientBalanceMapperTest {
 
         ObjectMapper objectMapper = new ObjectMapper();
         Map map = objectMapper.readValue(objectMapper.writeValueAsString(clientBalance), Map.class);
-        
-        cacheClient.sadd("client_balance:1", map);
+
+        cacheClient.hmset("client_balance:1", map);
     }
 }
