@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Slf4j
@@ -74,6 +75,7 @@ public class SmsController {
         checkFilterContext.check(submit);
         // base ont the snow
         submit.setSequenceId(snowFlakeUtil.nextId());
+        submit.setSendTime(LocalDateTime.now());
 
         // send to MQ, convert to strategy modules
         rabbitTemplate.convertAndSend(RabbitMQConstants.SMS_PRE_SEND, submit, new CorrelationData(submit.getSequenceId().toString()));

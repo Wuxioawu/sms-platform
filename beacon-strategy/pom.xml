@@ -49,7 +49,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-        <!--        IK -->
+        <!--        analysis-ik -->
         <dependency>
             <groupId>com.janeluo</groupId>
             <artifactId>ikanalyzer</artifactId>
@@ -61,10 +61,10 @@
             <artifactId>hutool-dfa</artifactId>
             <version>5.8.12</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.peng.sms.api</groupId>-->
-<!--            <artifactId>beacon-api</artifactId>-->
-<!--            <version>0.0.1-SNAPSHOT</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.peng.sms.api</groupId>-->
+        <!--            <artifactId>beacon-api</artifactId>-->
+        <!--            <version>0.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
     </dependencies>
 </project>

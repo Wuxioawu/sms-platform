@@ -1,5 +1,7 @@
 package com.peng.sms;
 
+import com.peng.sms.uitl.DFAUtil;
+import com.peng.sms.uitl.HutoolDFAUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -13,6 +15,8 @@ import org.springframework.web.client.RestTemplate;
 public class StrategyStarterApp {
     public static void main(String[] args) {
         SpringApplication.run(StrategyStarterApp.class, args);
+        DFAUtil.init();
+        HutoolDFAUtil.init();
     }
 
     @Bean
