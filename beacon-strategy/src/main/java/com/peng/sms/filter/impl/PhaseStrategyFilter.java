@@ -53,7 +53,7 @@ public class PhaseStrategyFilter implements StrategyFilter {
             areaInfo = mobileOperatorUtil.getMobileInfoBy360(preMobile);
             // 3. After retrieving the information from the third-party API, send a message to MQ and synchronize it to MySQL and Redis.
             if (!StringUtils.isEmpty(areaInfo)) {
-//                rabbitTemplate.convertAndSend(RabbitMQConstants.MOBILE_AREA_OPERATOR, submit.getMobile());
+                rabbitTemplate.convertAndSend(RabbitMQConstants.MOBILE_AREA_OPERATOR, submit.getMobile());
                 break getMobileInfo;
             }
             log.info("[Strategy Module - PhaseStrategyFilter] areaInfo from the third-party is null");

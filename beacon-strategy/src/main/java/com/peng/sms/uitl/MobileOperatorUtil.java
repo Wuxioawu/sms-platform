@@ -49,7 +49,7 @@ public class MobileOperatorUtil {
         }
 
         Map<String, String> areaAndOperator = (Map<String, String>) map.get(DATA);
-
+        log.info("[Strategy Module - MobileOperatorUtil] success the request ");
         return areaAndOperator.get(PROVINCE) + SPACE +
                 areaAndOperator.get(CITY) + SEPARATE +
                 areaAndOperator.get(SP);
