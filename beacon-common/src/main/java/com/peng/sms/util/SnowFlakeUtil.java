@@ -4,6 +4,7 @@ package com.peng.sms.util;
 import com.peng.sms.enums.ExceptionEnums;
 import com.peng.sms.exception.ApiException;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
@@ -18,6 +19,7 @@ import javax.annotation.PostConstruct;
  * <p>
  * This structure ensures high-performance, conflict-free unique ID generation in distributed systems.
  */
+@Component
 public class SnowFlakeUtil {
     /**
      * The 41-bit timestamp field can store up to 69.7 years of time values, starting from 0.

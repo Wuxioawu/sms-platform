@@ -5,9 +5,14 @@ import com.peng.sms.api.filter.CheckFilterContext;
 import com.peng.sms.api.form.SingleSendForm;
 import com.peng.sms.api.uitls.R;
 import com.peng.sms.api.vo.ResultVO;
+import com.peng.sms.constant.RabbitMQConstants;
 import com.peng.sms.model.StandardSubmit;
+import com.peng.sms.util.SnowFlakeUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
+import org.checkerframework.checker.units.qual.A;
+import org.springframework.amqp.rabbit.connection.CorrelationData;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -33,7 +38,13 @@ public class SmsController {
     private String headers;
 
     @Autowired
+    private RabbitTemplate rabbitTemplate;
+
+    @Autowired
     private CheckFilterContext checkFilterContext;
+
+    @Autowired
+    private SnowFlakeUtil snowFlakeUtil;
 
     private final String UNKNOW = "unknow";
     private final String X_FORWARDED_FOR = "x-forwarded-for";
@@ -59,11 +70,13 @@ public class SmsController {
         submit.setState(singleSendForm.getMessageType());
         submit.setUid(singleSendForm.getUid());
 
+        // check process
         checkFilterContext.check(submit);
+        // base ont the snow
+        submit.setSequenceId(snowFlakeUtil.nextId());
 
         // send to MQ, convert to strategy modules
-
-
+        rabbitTemplate.convertAndSend(RabbitMQConstants.SMS_PRE_SEND, submit, new CorrelationData(submit.getSequenceId().toString()));
         return R.ok();
     }
 

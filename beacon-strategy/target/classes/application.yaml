@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: beacon-strategy
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+        # beacon-strategy-dev.yml
+server:
+  port: 18004
