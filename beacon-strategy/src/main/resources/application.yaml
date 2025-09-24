@@ -11,5 +11,14 @@ spring:
         server-addr: localhost:8848
         file-extension: yml
         # beacon-strategy-dev.yml
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: wupeng
+    password: wupeng
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
 server:
   port: 18004
