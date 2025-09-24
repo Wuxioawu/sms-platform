@@ -28,3 +28,10 @@ server:
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
+
+feign:
+  client:
+    config:
+      beacon-cache:
+        connectTimeout: 50000000
+        readTimeout: 10000000
