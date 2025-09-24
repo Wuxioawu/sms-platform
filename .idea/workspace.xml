@@ -5,25 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/peng/sms/model/StandardReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/DirtyWordDFAStrategyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/DirtyWordHutoolDFAStrategyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/uitl/DFAUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/uitl/ErrorSendMsgUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/uitl/HutoolDFAUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/uitl/SpringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/MobileDirtyWordMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/TestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/BlackClientStrategyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/BlackGlobalStrategyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/MobileBlackMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/peng/sms/api/controller/SmsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/SmsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/classes/com/peng/sms/api/controller/SmsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/StrategyStarterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/StrategyStarterApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/DirtyWordStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/DirtyWordStrategyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/StrategyStarterApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/StrategyStarterApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/config/RabbitTemplateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/config/RabbitTemplateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/DirtyWordStrategyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/DirtyWordStrategyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/BlackStrategyFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/BlackStrategyFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/TestData.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +71,7 @@
     "JUnit.ClientTemplateMapperTest.findBySignId.executor": "Run",
     "JUnit.MobileAreaMapperTest.executor": "Run",
     "JUnit.MobileAreaMapperTest.findAll.executor": "Run",
+    "JUnit.MobileBlackMapperTest.findAll.executor": "Run",
     "JUnit.MobileDirtyWordMapperTest.findDirtyWord.executor": "Run",
     "JUnit.TestData.insertDataToRedis.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
@@ -167,7 +157,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DFAUtil">
+  <component name="RunManager" selected="JUnit.MobileBlackMapperTest.findAll">
     <configuration name="DFAUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.peng.sms.uitl.DFAUtil" />
       <module name="beacon-strategy" />
@@ -207,6 +197,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MobileBlackMapperTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beacon-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peng.sms.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.MobileBlackMapperTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestData.insertDataToRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beacon-test" />
       <extension name="coverage">
@@ -227,10 +233,12 @@
       <item itemvalue="Application.DFAUtil" />
       <item itemvalue="Application.TestData" />
       <item itemvalue="Application.TestData (1)" />
+      <item itemvalue="JUnit.MobileBlackMapperTest.findAll" />
       <item itemvalue="JUnit.TestData.insertDataToRedis" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MobileBlackMapperTest.findAll" />
         <item itemvalue="Application.DFAUtil" />
         <item itemvalue="JUnit.TestData.insertDataToRedis" />
         <item itemvalue="Application.TestData (1)" />
@@ -258,7 +266,7 @@
       <workItem from="1758096789962" duration="4870000" />
       <workItem from="1758263265322" duration="6639000" />
       <workItem from="1758650996967" duration="29641000" />
-      <workItem from="1758731397797" duration="12310000" />
+      <workItem from="1758731397797" duration="14732000" />
     </task>
     <servers />
   </component>
@@ -323,6 +331,11 @@
           <url>file://$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/DirtyWordDFAStrategyFilter.java</url>
           <line>20</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/BlackGlobalStrategyFilter.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

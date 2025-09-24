@@ -38,6 +38,9 @@ public class TestData {
     private MobileDirtyWordMapper mobileDirtyWordMapper;
 
     @Autowired
+    private MobileBlackMapper mobileBlackMapper;
+
+    @Autowired
     private CacheClient cacheClient;
 
     @Test
@@ -48,6 +51,20 @@ public class TestData {
         ClientTemplateMapperTestFindBySignId();
         MobileAreaMapperFindAll();
         MobileDirtyWordMapperFindDirtyWord();
+        MobileBlackMapperTestFindAll();
+    }
+
+    void MobileBlackMapperTestFindAll() {
+        List<MobileBlack> mobileBlackList = mobileBlackMapper.findAll();
+        for (MobileBlack mobileBlack : mobileBlackList) {
+            if (mobileBlack.getClientId() == 0) {
+                // platform
+                cacheClient.set("black:" + mobileBlack.getBlackNumber(), "1");
+            } else {
+                // client
+                cacheClient.set("black:" + mobileBlack.getClientId() + ":" + mobileBlack.getBlackNumber(), "1");
+            }
+        }
     }
 
     void MobileDirtyWordMapperFindDirtyWord() {
