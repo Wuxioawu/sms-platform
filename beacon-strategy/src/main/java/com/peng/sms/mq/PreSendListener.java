@@ -11,6 +11,8 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
+
 @Component
 @Slf4j
 public class PreSendListener {
@@ -21,7 +23,8 @@ public class PreSendListener {
     @RabbitListener(queues = RabbitMQConstants.SMS_PRE_SEND)
     public void listen(StandardSubmit submit, Message message, Channel channel) throws Exception {
         log.info("[Strategy Module - Receive Message] Received the message sent from the Interface Module: submit = {}", submit);
-        System.out.println("start:" + System.currentTimeMillis());
+
+        System.out.println("start:" + LocalDateTime.now());
 
         try {
             strategyFilterContext.strategy(submit);
@@ -31,7 +34,7 @@ public class PreSendListener {
             log.info("[Strategy Module - Consumption Failed] Validation failed, msg = {}", e.getMessage());
             channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
         } finally {
-            System.out.println("end:" + System.currentTimeMillis());
+            System.out.println("end:" + LocalDateTime.now());
         }
     }
 }

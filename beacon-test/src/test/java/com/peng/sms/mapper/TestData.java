@@ -41,6 +41,9 @@ public class TestData {
     private MobileBlackMapper mobileBlackMapper;
 
     @Autowired
+    private MobileTransferMapper mobileTransferMapper;
+
+    @Autowired
     private CacheClient cacheClient;
 
     @Test
@@ -52,6 +55,14 @@ public class TestData {
         MobileAreaMapperFindAll();
         MobileDirtyWordMapperFindDirtyWord();
         MobileBlackMapperTestFindAll();
+        MobileTransferMapperTestFindAll();
+    }
+
+    void MobileTransferMapperTestFindAll() {
+        List<MobileTransfer> list = mobileTransferMapper.findAll();
+        for (MobileTransfer mobileTransfer : list) {
+            cacheClient.set("transfer:" + mobileTransfer.getTransferNumber(), mobileTransfer.getNowIsp());
+        }
     }
 
     void MobileBlackMapperTestFindAll() {
