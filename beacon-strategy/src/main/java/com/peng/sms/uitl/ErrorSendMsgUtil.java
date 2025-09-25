@@ -6,12 +6,14 @@ import com.peng.sms.constant.RabbitMQConstants;
 import com.peng.sms.constant.SmsConstant;
 import com.peng.sms.model.StandardReport;
 import com.peng.sms.model.StandardSubmit;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
+@Slf4j
 @Component
 public class ErrorSendMsgUtil {
 
@@ -29,6 +31,7 @@ public class ErrorSendMsgUtil {
     public void sendWriteLog(StandardSubmit submit) {
         submit.setReportState(SmsConstant.REPORT_FAIL);
         // Send the message to the write-log queue
+        log.info("ErrorSendMsgUtil =-> sendWriteLog " + submit);
         rabbitTemplate.convertAndSend(RabbitMQConstants.SMS_WRITE_LOG, submit);
     }
 
@@ -36,6 +39,7 @@ public class ErrorSendMsgUtil {
      * Send a status report when the strategy module validation fails
      */
     public void sendPushReport(StandardSubmit submit) {
+        log.info("ErrorSendMsgUtil =-> sendPushReport " + submit);
         // Get the client's isCallback value
         Integer isCallback = cacheClient.hgetInteger(CacheConstant.CLIENT_BUSINESS + submit.getApikey(), "isCallback");
         // Check if a callback to the client is required

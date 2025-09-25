@@ -19,12 +19,6 @@ import java.util.List;
 public class DirtyWordHutoolDFAStrategyFilter implements StrategyFilter {
 
     @Autowired
-    private RabbitTemplate rabbitTemplate;
-
-    @Autowired
-    private BeaconCacheClient cacheClient;
-
-    @Autowired
     private ErrorSendMsgUtil sendMsgUtil;
 
     @Override
