@@ -5,10 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/FeeStrategyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/uitl/ClientBalanceUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/uitl/ChannelTransferUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ChannelMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/ClientChannelMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/BlackClientStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/BlackClientStrategyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/BlackGlobalStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/BlackGlobalStrategyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/DirtyWordHutoolDFAStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/DirtyWordHutoolDFAStrategyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/FeeStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/FeeStrategyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/LimitOneHourStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/LimitOneHourStrategyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/LimitOneMinuteStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/LimitOneMinuteStrategyFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/RouteStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/RouteStrategyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/uitl/ErrorSendMsgUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/uitl/ErrorSendMsgUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/BlackClientStrategyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/BlackClientStrategyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/BlackGlobalStrategyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/BlackGlobalStrategyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/DirtyWordHutoolDFAStrategyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/DirtyWordHutoolDFAStrategyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/FeeStrategyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/FeeStrategyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/LimitOneHourStrategyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/LimitOneHourStrategyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/LimitOneMinuteStrategyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/LimitOneMinuteStrategyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/RouteStrategyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/filter/impl/RouteStrategyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/uitl/ErrorSendMsgUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/target/classes/com/peng/sms/uitl/ErrorSendMsgUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/peng/sms/mapper/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/TestData.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +78,11 @@
     "Application.SnowFlakeUtil.executor": "Run",
     "Application.TestData (1).executor": "Run",
     "Application.TestData.executor": "Run",
+    "JUnit.ChannelMapperTest.findAll.executor": "Run",
     "JUnit.CheckFilterContextTest.check.executor": "Run",
     "JUnit.ClientBalanceMapperTest.findByClientId.executor": "Run",
     "JUnit.ClientBusinessMapperTest.findById.executor": "Run",
+    "JUnit.ClientChannelMapperTest.findAll.executor": "Run",
     "JUnit.ClientSignMapperTest.findByClientId.executor": "Run",
     "JUnit.ClientTemplateMapperTest.findBySignId.executor": "Run",
     "JUnit.MobileAreaMapperTest.executor": "Run",
@@ -92,7 +112,7 @@
     "Spring Boot.APIStarterAPP.executor": "Run",
     "Spring Boot.BeaconTestApplication.executor": "Run",
     "Spring Boot.CacheStartApp.executor": "Run",
-    "Spring Boot.StrategyStarterApp.executor": "Run",
+    "Spring Boot.StrategyStarterApp.executor": "Debug",
     "Spring Boot.TestStartApp.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -154,7 +174,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MobileTransferMapperTest.findAll">
+  <component name="RunManager" selected="JUnit.ClientChannelMapperTest.findAll">
     <configuration name="DFAUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.peng.sms.uitl.DFAUtil" />
       <module name="beacon-strategy" />
@@ -168,8 +188,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestData (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.TestData" />
+    <configuration name="ChannelMapperTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beacon-test" />
       <extension name="coverage">
         <pattern>
@@ -177,6 +196,26 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.ChannelMapperTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientChannelMapperTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beacon-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peng.sms.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.ClientChannelMapperTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -213,36 +252,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestData.insertDataToRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="beacon-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.peng.sms.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.TestData" />
-      <option name="METHOD_NAME" value="insertDataToRedis" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.DFAUtil" />
-      <item itemvalue="Application.TestData (1)" />
+      <item itemvalue="JUnit.ChannelMapperTest.findAll" />
+      <item itemvalue="JUnit.ClientChannelMapperTest.findAll" />
       <item itemvalue="JUnit.MobileBlackMapperTest.findAll" />
       <item itemvalue="JUnit.MobileTransferMapperTest.findAll" />
-      <item itemvalue="JUnit.TestData.insertDataToRedis" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClientChannelMapperTest.findAll" />
+        <item itemvalue="JUnit.ChannelMapperTest.findAll" />
         <item itemvalue="JUnit.MobileTransferMapperTest.findAll" />
         <item itemvalue="JUnit.MobileBlackMapperTest.findAll" />
         <item itemvalue="Application.DFAUtil" />
-        <item itemvalue="JUnit.TestData.insertDataToRedis" />
-        <item itemvalue="Application.TestData (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +289,7 @@
       <workItem from="1758096789962" duration="4870000" />
       <workItem from="1758263265322" duration="6639000" />
       <workItem from="1758650996967" duration="29641000" />
-      <workItem from="1758731397797" duration="23912000" />
+      <workItem from="1758731397797" duration="29852000" />
     </task>
     <servers />
   </component>
@@ -336,6 +359,11 @@
           <url>file://$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/TransferStrategyFilter.java</url>
           <line>23</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/beacon-strategy/src/main/java/com/peng/sms/filter/impl/RouteStrategyFilter.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -33,10 +33,8 @@ public class BlackClientStrategyFilter implements StrategyFilter {
         String value = cacheClient.getString(CacheConstant.BLACK + clientId + CacheConstant.SEPARATE + mobile);
         if (TRUE.equals(value)) {
             log.info("[Strategy Module - BlackClientStrategyFilter]   the mobile number stay int black list！ mobile = {}", mobile);
-            submit.setErrorMsg(ExceptionEnums.BLACK_CLIENT + ",mobile = " + mobile);
-            sendMsgUtil.sendWriteLog(submit);
-            sendMsgUtil.sendPushReport(submit);
-            throw new StrategyException(ExceptionEnums.BLACK_CLIENT);
+            String errorMessage = ExceptionEnums.BLACK_CLIENT + ",mobile = " + mobile;
+            sendMsgUtil.sendErrorMessage(submit, ExceptionEnums.BLACK_CLIENT, errorMessage);
         }
         log.info("[Strategy Module - BlackClientStrategyFilter]   the current mobile is not client black list! ");
     }

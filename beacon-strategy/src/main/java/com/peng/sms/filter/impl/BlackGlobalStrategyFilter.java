@@ -31,10 +31,8 @@ public class BlackGlobalStrategyFilter implements StrategyFilter {
 
         if (TRUE.equals(value)) {
             log.info("[Strategy Module - BlackGlobalStrategyFilter]  the number is black mobile = {}", mobile);
-            submit.setErrorMsg(ExceptionEnums.BLACK_GLOBAL.getMsg() + ",mobile = " + mobile);
-            sendMsgUtil.sendWriteLog(submit);
-            sendMsgUtil.sendPushReport(submit);
-            throw new StrategyException(ExceptionEnums.BLACK_GLOBAL);
+            String errorMessage = ExceptionEnums.BLACK_GLOBAL.getMsg() + ",mobile = " + mobile;
+            sendMsgUtil.sendErrorMessage(submit, ExceptionEnums.BLACK_GLOBAL, errorMessage);
         }
         log.info("[Strategy Module - BlackGlobalStrategyFilter]¬   The current phone number is not in the blacklist!！");
     }

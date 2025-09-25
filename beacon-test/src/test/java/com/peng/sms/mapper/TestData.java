@@ -44,6 +44,12 @@ public class TestData {
     private MobileTransferMapper mobileTransferMapper;
 
     @Autowired
+    private ChannelMapper channelMapper;
+
+    @Autowired
+    private ClientChannelMapper clientChannelMapper;
+
+    @Autowired
     private CacheClient cacheClient;
 
     @Test
@@ -56,6 +62,36 @@ public class TestData {
         MobileDirtyWordMapperFindDirtyWord();
         MobileBlackMapperTestFindAll();
         MobileTransferMapperTestFindAll();
+        ChannelMapperTestFindAll();
+        ClientChannelMapperTestFindAll();
+    }
+
+    void ClientChannelMapperTestFindAll() {
+        List<ClientChannel> list = clientChannelMapper.findAll();
+        for (ClientChannel clientChannel : list) {
+            ObjectMapper objectMapper = new ObjectMapper();
+            Map map = null;
+            try {
+                map = objectMapper.readValue(objectMapper.writeValueAsString(clientChannel), Map.class);
+            } catch (JsonProcessingException e) {
+                throw new RuntimeException(e);
+            }
+            cacheClient.sadd("client_channel:" + clientChannel.getClientId(), map);
+        }
+    }
+
+    void ChannelMapperTestFindAll() {
+        List<Channel> list = channelMapper.findAll();
+        for (Channel channel : list) {
+            ObjectMapper objectMapper = new ObjectMapper();
+            Map map = null;
+            try {
+                map = objectMapper.readValue(objectMapper.writeValueAsString(channel), Map.class);
+            } catch (JsonProcessingException e) {
+                throw new RuntimeException(e);
+            }
+            cacheClient.hmset("channel:" + channel.getId(), map);
+        }
     }
 
     void MobileTransferMapperTestFindAll() {

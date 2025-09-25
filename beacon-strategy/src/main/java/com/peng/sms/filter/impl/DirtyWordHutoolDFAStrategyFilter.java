@@ -30,14 +30,9 @@ public class DirtyWordHutoolDFAStrategyFilter implements StrategyFilter {
 
         if (dirtyWords != null && !dirtyWords.isEmpty()) {
             log.info("【Strategy Module - Sensitive Word Check】 SMS content contains sensitive words, dirtyWords = {}", dirtyWords);
-
             // ================================Send write-log message================================
-            submit.setErrorMsg(ExceptionEnums.HAVE_DIRTY_WORD.getMsg() + "dirtyWords = " + dirtyWords);
-            sendMsgUtil.sendWriteLog(submit);
-            // ================================Send status report message================================
-            sendMsgUtil.sendPushReport(submit);
-            // // ================================Throw exception================================
-            throw new StrategyException(ExceptionEnums.HAVE_DIRTY_WORD);
+            String errorMessage = ExceptionEnums.HAVE_DIRTY_WORD.getMsg() + "dirtyWords = " + dirtyWords;
+            sendMsgUtil.sendErrorMessage(submit, ExceptionEnums.HAVE_DIRTY_WORD, errorMessage);
         }
         log.info("【Strategy Module - Sensitive Word Check】 Validation passed, no sensitive words found");
     }

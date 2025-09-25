@@ -68,12 +68,9 @@ public class LimitOneHourStrategyFilter implements StrategyFilter {
         log.info("【Strategy Module - One-Hour Rate Limiting】  Rule passed, SMS can be sent!");
     }
 
-
     private void sendErrorMsg(StandardSubmit submit) {
-        submit.setErrorMsg(ExceptionEnums.ONE_HOUR_LIMIT + ",mobile = " + submit.getMobile());
-        errorSendMsgUtil.sendWriteLog(submit);
-        errorSendMsgUtil.sendPushReport(submit);
-        throw new StrategyException(ExceptionEnums.ONE_HOUR_LIMIT);
+        String errorMessage = ExceptionEnums.ONE_HOUR_LIMIT + ",mobile = " + submit.getMobile();
+        errorSendMsgUtil.sendErrorMessage(submit, ExceptionEnums.ONE_HOUR_LIMIT, errorMessage);
     }
 }
 

@@ -39,10 +39,7 @@ public class FeeStrategyFilter implements StrategyFilter {
         if (amount < clientAmountLimit) {
             log.info("【Strategy Module - Balance Check】  Balance after deduction exceeds allowed debt limit, cannot send SMS!");
             cacheClient.hIncrBy(CacheConstant.CLIENT_BALANCE + clientId, BALANCE, fee);
-            submit.setErrorMsg(ExceptionEnums.BALANCE_NOT_ENOUGH.getMsg());
-            errorSendMsgUtil.sendWriteLog(submit);
-            errorSendMsgUtil.sendPushReport(submit);
-            throw new StrategyException(ExceptionEnums.BALANCE_NOT_ENOUGH);
+            errorSendMsgUtil.sendErrorMessage(submit, ExceptionEnums.BALANCE_NOT_ENOUGH, ExceptionEnums.BALANCE_NOT_ENOUGH.getMsg());
         }
         log.info("【Strategy Module - Balance Check】  Fee deducted successfully!");
     }

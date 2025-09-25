@@ -4,6 +4,8 @@ import com.peng.sms.client.BeaconCacheClient;
 import com.peng.sms.constant.CacheConstant;
 import com.peng.sms.constant.RabbitMQConstants;
 import com.peng.sms.constant.SmsConstant;
+import com.peng.sms.enums.ExceptionEnums;
+import com.peng.sms.exception.StrategyException;
 import com.peng.sms.model.StandardReport;
 import com.peng.sms.model.StandardSubmit;
 import lombok.extern.slf4j.Slf4j;
@@ -22,6 +24,13 @@ public class ErrorSendMsgUtil {
 
     @Autowired
     private BeaconCacheClient cacheClient;
+
+    public void sendErrorMessage(StandardSubmit submit, ExceptionEnums exceptionEnums,String errorMsg) {
+        submit.setErrorMsg(errorMsg);
+        sendWriteLog(submit);
+        sendPushReport(submit);
+        throw new StrategyException(exceptionEnums);
+    }
 
     /**
      * Send a write-log message when the strategy module validation fails
