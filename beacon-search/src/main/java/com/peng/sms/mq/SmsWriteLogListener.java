@@ -25,8 +25,8 @@ public class SmsWriteLogListener {
     public void consume(StandardSubmit submit, Channel channel, Message message) throws IOException {
         // Invoke the add method of the search module to perform the add operation
         log.info("[search module] -> Received log information, submit = {}", submit);
-
-        searchService.index(SearchUtils.INDEX + SearchUtils.getYear(), submit.getSequenceId().toString(), JsonUtil.obj2JSON(submit));
+        String obj2JSON = JsonUtil.obj2JSON(submit);
+        searchService.index(SearchUtils.INDEX + SearchUtils.getYear(), submit.getSequenceId().toString(), obj2JSON);
         //2、manual ack
         channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
     }

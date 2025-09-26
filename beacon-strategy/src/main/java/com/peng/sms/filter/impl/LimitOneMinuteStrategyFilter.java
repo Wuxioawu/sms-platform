@@ -60,7 +60,7 @@ public class LimitOneMinuteStrategyFilter implements StrategyFilter {
     }
 
     private void sendErrorMsg(StandardSubmit submit) {
-        String errorMessage = ExceptionEnums.ONE_MINUTE_LIMIT + ", mobile = " + submit.getMobile();
+        String errorMessage = ExceptionEnums.ONE_MINUTE_LIMIT.getMsg() + ", mobile = " + submit.getMobile();
         errorSendMsgUtil.sendErrorMessage(submit, ExceptionEnums.ONE_MINUTE_LIMIT, errorMessage);
     }
 }
