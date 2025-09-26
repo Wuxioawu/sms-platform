@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: beacon-push
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+        # beacon-push-dev.yml
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: wupeng
+    password: wupeng
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+server:
+  port: 18006

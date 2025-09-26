@@ -38,8 +38,7 @@ public class LimitOneHourStrategyFilter implements StrategyFilter {
             return;
         }
 
-        long sendTimeMilli = submit.getSendTime().toInstant(ZoneOffset.of(UTC)).toEpochMilli();
-        submit.setOneHourLimitMilli(sendTimeMilli);
+        submit.setOneHourLimitMilli(submit.getSendTime());
 
         String key = CacheConstant.LIMIT_HOURS + submit.getClientId() + CacheConstant.SEPARATE + submit.getMobile();
 

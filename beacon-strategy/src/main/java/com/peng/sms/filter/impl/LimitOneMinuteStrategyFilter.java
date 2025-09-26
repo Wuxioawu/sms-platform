@@ -35,7 +35,7 @@ public class LimitOneMinuteStrategyFilter implements StrategyFilter {
         }
         log.info("【Strategy Module - One-Minute Rate Limiting】  Starting validation...");
 
-        long sendTimeMilli = submit.getSendTime().toInstant(ZoneOffset.of(UTC)).toEpochMilli();
+        long sendTimeMilli = submit.getSendTime();
 
         String key = CacheConstant.LIMIT_MINUTES + submit.getClientId() + CacheConstant.SEPARATE + submit.getMobile();
         Boolean addOk = cacheClient.zadd(key, sendTimeMilli, sendTimeMilli);

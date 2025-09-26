@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.Objects;
 
 @Slf4j
@@ -49,6 +50,7 @@ public class SmsController {
 
     private final String UNKNOW = "unknow";
     private final String X_FORWARDED_FOR = "x-forwarded-for";
+    private final String UTC = "+8";
 
     @PostMapping(value = "/single_send", produces = "application/json;charset=utf-8")
     public ResultVO singleSend(@RequestBody @Validated SingleSendForm singleSendForm, BindingResult bindingResult, HttpServletRequest request) {
@@ -75,7 +77,7 @@ public class SmsController {
         checkFilterContext.check(submit);
         // base ont the snow
         submit.setSequenceId(snowFlakeUtil.nextId());
-        submit.setSendTime(LocalDateTime.now());
+        submit.setSendTime(System.currentTimeMillis());
 
         // send to MQ, convert to strategy modules
         rabbitTemplate.convertAndSend(RabbitMQConstants.SMS_PRE_SEND, submit, new CorrelationData(submit.getSequenceId().toString()));

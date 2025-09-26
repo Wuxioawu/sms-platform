@@ -62,9 +62,7 @@ public class StandardSubmit implements Serializable {
     /**
      * SMS sending time, set to the current system time.
      */
-    @JsonSerialize(using = LocalDateTimeSerializer.class)
-    @JsonDeserialize(using = LocalDateTimeDeserializer.class)
-    private LocalDateTime sendTime;
+    private Long sendTime;
 
     /**
      * Cost of the current SMS.
