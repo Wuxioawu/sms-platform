@@ -1,7 +1,7 @@
 package com.peng.sms.netty4;
 
 
-import com.mashibing.smsgateway.netty4.entity.CmppActiveTest;
+import com.peng.sms.netty4.entity.CmppActiveTest;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleState;

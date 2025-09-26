@@ -1,6 +1,5 @@
 package com.peng.sms.netty4;
 
-
 import com.peng.sms.netty4.entity.CmppDeliver;
 import com.peng.sms.netty4.entity.CmppSubmitResp;
 import com.peng.sms.netty4.utils.MsgUtils;

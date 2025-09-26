@@ -80,7 +80,7 @@ public class CmppSubmit extends CmppMessageHeader {
     private int linkIdLen;
     private int submitExpMsgLen;
 
-    public CmppSubmit(byte version, String srcId, int SequenceId, String mobile, String content) {
+    public CmppSubmit() {
         super(Command.CMPP_SUBMIT, version);
         if (version == Command.CMPP2_VERSION) {
             terminalIdLen = 21;
