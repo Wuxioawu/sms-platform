@@ -10,6 +10,7 @@ import java.io.UnsupportedEncodingException;
 /**
  * CMPP请求信息
  */
+
 /**
  * CMPP请求信息
  */
@@ -80,7 +81,7 @@ public class CmppSubmit extends CmppMessageHeader {
     private int linkIdLen;
     private int submitExpMsgLen;
 
-    public CmppSubmit() {
+    public CmppSubmit(byte version, String srcId, int SequenceId, String mobile, String content) {
         super(Command.CMPP_SUBMIT, version);
         if (version == Command.CMPP2_VERSION) {
             terminalIdLen = 21;
