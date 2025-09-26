@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: beacon-search
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+        # beacon-search-dev.yml
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: wupeng
+    password: wupeng
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+server:
+  port: 18005
+
+elasticsearch:
+  hostAndPorts: 114.116.226.76:9200,localhost:9200
+  username: elastic
+  password: wupeng

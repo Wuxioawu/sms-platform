@@ -4,7 +4,6 @@ import com.peng.sms.client.BeaconCacheClient;
 import com.peng.sms.constant.CacheConstant;
 import com.peng.sms.constant.RabbitMQConstants;
 import com.peng.sms.enums.ExceptionEnums;
-import com.peng.sms.exception.StrategyException;
 import com.peng.sms.filter.StrategyFilter;
 import com.peng.sms.model.StandardSubmit;
 import com.peng.sms.uitl.ChannelTransferUtil;
