@@ -20,8 +20,8 @@ spring:
     listener:
       simple:
         acknowledge-mode: manual
-        concurrency: 10
-        prefetch: 50
+#        concurrency: 10
+#        prefetch: 50
 server:
   port: 18007
 gateway:
