@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: beacon-smsgateway
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+        # beacon-smsgateway-dev.yml
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: wupeng
+    password: wupeng
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+        concurrency: 10
+        prefetch: 50
+server:
+  port: 18007
+gateway:
+  sendtopic: sms_gateway_topic_21

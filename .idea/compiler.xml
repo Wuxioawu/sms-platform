@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="beacon-smsgateway" />
         <module name="beacon-push" />
         <module name="beacon-api" />
         <module name="beacon-common" />
@@ -32,6 +33,7 @@
       <module name="beacon-common" options="-parameters" />
       <module name="beacon-push" options="-parameters" />
       <module name="beacon-search" options="-parameters" />
+      <module name="beacon-smsgateway" options="-parameters" />
       <module name="beacon-strategy" options="-parameters" />
       <module name="beacon-test" options="-parameters" />
       <module name="horse-framework-common" options="-parameters" />
