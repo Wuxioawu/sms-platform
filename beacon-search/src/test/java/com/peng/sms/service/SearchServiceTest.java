@@ -28,7 +28,7 @@ class SearchServiceTest {
 
     @Test
     void exists() throws IOException {
-        System.out.println(searchService.exists("sms_submit_log_2023", "2349236478326478236478"));
+        System.out.println(searchService.exists("sms_submit_log_2025", "381124303657107456"));
     }
 
     @Test

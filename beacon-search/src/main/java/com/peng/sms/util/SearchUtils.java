@@ -41,4 +41,8 @@ public class SearchUtils {
     public static StandardReport get() {
         return reportThreadLocal.get();
     }
+
+    public static void remove() {
+        reportThreadLocal.remove();
+    }
 }
