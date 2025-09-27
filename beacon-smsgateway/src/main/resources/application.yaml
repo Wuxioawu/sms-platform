@@ -3,6 +3,14 @@ spring:
     name: beacon-smsgateway
   profiles:
     active: dev
+  dynamic:
+    thread-pool:
+      server-addr: http://localhost:6691
+      username: admin
+      password: 123456
+      namespace: beacon-cloud
+      item-id: ${spring.application.name}
+      enable: true
   cloud:
     nacos:
       discovery:
@@ -22,6 +30,7 @@ spring:
         acknowledge-mode: manual
         concurrency: 10
         prefetch: 50
+
 server:
   port: 18007
 gateway:
