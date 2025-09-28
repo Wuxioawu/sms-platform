@@ -1,0 +1,29 @@
+spring:
+#  datasource:
+#    driver-class-name: org.gjt.mm.mysql.Driver
+#    url: jdbc:mysql://localhost:3306/sms_platform?characterEncoding=utf-8
+#    username: root
+#    password: wupeng
+#    type: com.alibaba.druid.pool.DruidDataSource
+  application:
+    name: beacon-webmaster
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+        # beacon-webmaster-dev.yml
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+#shiro:
+#  loginUrl: /login.html
+#  unauthorizedUrl: unauthorized.html
+server:
+  port: 18009

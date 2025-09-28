@@ -14,6 +14,7 @@
         <module name="beacon-cache" />
         <module name="beacon-test" />
         <module name="beacon-strategy" />
+        <module name="beacon-webmaster" />
         <module name="beacon-search" />
         <module name="beacon-monitor" />
       </profile>
@@ -38,6 +39,7 @@
       <module name="beacon-smsgateway" options="-parameters" />
       <module name="beacon-strategy" options="-parameters" />
       <module name="beacon-test" options="-parameters" />
+      <module name="beacon-webmaster" options="-parameters" />
       <module name="horse-framework-common" options="-parameters" />
       <module name="horse-framework-starter" options="" />
       <module name="horse-framework-starter-redis" options="-parameters" />
