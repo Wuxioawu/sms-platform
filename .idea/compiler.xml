@@ -15,6 +15,7 @@
         <module name="beacon-test" />
         <module name="beacon-strategy" />
         <module name="beacon-search" />
+        <module name="beacon-monitor" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,6 +32,7 @@
       <module name="beacon-cache" options="-parameters" />
       <module name="beacon-cloud" options="" />
       <module name="beacon-common" options="-parameters" />
+      <module name="beacon-monitor" options="-parameters" />
       <module name="beacon-push" options="-parameters" />
       <module name="beacon-search" options="-parameters" />
       <module name="beacon-smsgateway" options="-parameters" />

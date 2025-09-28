@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: beacon-monitor
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+        # beacon-monitor-dev.yml
+  mail:
+    host: smtp.163.com
+    username: wupeng202509@163.com
+    password: KLjLPW8Ds7pbHMw8
+    tos: 1761230580@qq.com
+  rabbitmq:
+    addresses: localhost
+    port: 5672
+    username: wupeng
+    password: wupeng
+    virtual-host: /
+server:
+  port: 18008
+xxl:
+  job:
+    admin:
+      addresses: http://localhost:9090/xxl-job-admin
+      timeout: 100
+    accessToken:
+    executor:
+      appname: xxl-job-executor-sample
+      address:
+      ip: 127.0.0.1
+      port: 9999
+      logpath: ./xxl-job/jobhandler
+      logretentiondays: 30
