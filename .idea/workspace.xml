@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-monitor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-monitor/src/main/java/com/peng/sms/MonitorStarterApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-monitor/src/main/java/com/peng/sms/client/CacheClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-monitor/src/main/java/com/peng/sms/config/XxlJobConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-monitor/src/main/java/com/peng/sms/task/MonitorClientBalanceTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-monitor/src/main/java/com/peng/sms/task/MonitorQueueMessageCountTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-monitor/src/main/java/com/peng/sms/task/TestTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-monitor/src/main/java/com/peng/sms/util/MailUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-monitor/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-cache/src/main/java/com/peng/sms/controller/CacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/src/main/java/com/peng/sms/controller/CacheController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-cache/target/classes/com/peng/sms/controller/CacheController.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/target/classes/com/peng/sms/controller/CacheController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-monitor/src/main/java/com/peng/sms/task/MonitorClientBalanceTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-monitor/src/main/java/com/peng/sms/task/MonitorClientBalanceTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-monitor/target/classes/com/peng/sms/task/MonitorClientBalanceTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-monitor/target/classes/com/peng/sms/task/MonitorClientBalanceTask.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +98,7 @@
     "Spring Boot.APIStarterAPP.executor": "Run",
     "Spring Boot.BeaconTestApplication.executor": "Run",
     "Spring Boot.CacheStartApp.executor": "Run",
-    "Spring Boot.MonitorStarterApp.executor": "Debug",
+    "Spring Boot.MonitorStarterApp.executor": "Run",
     "Spring Boot.PushStarterApp.executor": "Run",
     "Spring Boot.SearchStarterApp.executor": "Run",
     "Spring Boot.SmsGatewayStarterApp.executor": "Run",
@@ -251,9 +243,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CacheStartApp" />
         <item itemvalue="Spring Boot.MonitorStarterApp" />
         <item itemvalue="Spring Boot.APIStarterAPP" />
-        <item itemvalue="Spring Boot.CacheStartApp" />
         <item itemvalue="Spring Boot.SearchStarterApp" />
         <item itemvalue="JUnit.SearchServiceTest.exists" />
       </list>
@@ -281,7 +273,7 @@
       <workItem from="1758650996967" duration="29641000" />
       <workItem from="1758731397797" duration="30846000" />
       <workItem from="1758819906466" duration="27245000" />
-      <workItem from="1758914737453" duration="31909000" />
+      <workItem from="1758914737453" duration="34249000" />
     </task>
     <servers />
   </component>
@@ -371,16 +363,6 @@
           <url>file://$PROJECT_DIR$/beacon-push/src/main/java/com/peng/sms/PushStarterApp.java</url>
           <line>13</line>
           <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/beacon-monitor/src/main/java/com/peng/sms/task/MonitorQueueMessageCountTask.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/beacon-monitor/src/main/java/com/peng/sms/task/MonitorQueueMessageCountTask.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -17,7 +17,7 @@ import java.util.Set;
 public class MonitorClientBalanceTask {
 
     // Customer balance limit: if below 500 units, send notification
-    private final long balanceLimit = 500_000; // Amount is in cents (or smallest currency unit)
+    private final long balanceLimit = 500000; // Amount is in cents (or smallest currency unit)
 
     // Pattern to match client balance keys in cache
     private final String CLIENT_BALANCE_PATTERN = "client_balance:*";
@@ -43,7 +43,7 @@ public class MonitorClientBalanceTask {
 
         for (String key : keys) {
             // 2. Get balance and email from cache
-            Map<String, Object> map = cacheClient.hGetAll(key);
+            Map<Object, Object> map = cacheClient.hGetAll(key);
             Long balance = Long.parseLong(map.get(BALANCE).toString());
             String email = (String) map.get(EMAIL);
 

@@ -5,9 +5,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -16,6 +18,7 @@ import java.util.Set;
 public class CacheController {
 
     private final String CACHEMODEL = "【Cache Model】";
+
     @Autowired
     private RedisClient redisClient;
 
@@ -64,7 +67,14 @@ public class CacheController {
     @GetMapping("/cache/hgetall/{key}")
     public Map hGetAll(@PathVariable(value = "key") String key) {
         log.info(CACHEMODEL + " hGetAll，key ={} ", key);
-        Map<String, Object> value = redisClient.hGetAll(key);
+
+        redisTemplate.setKeySerializer(new StringRedisSerializer());
+        redisTemplate.setHashKeySerializer(new StringRedisSerializer());
+        redisTemplate.setValueSerializer(new StringRedisSerializer());
+        redisTemplate.setHashValueSerializer(new StringRedisSerializer());
+
+        redisClient.hGetAll(key);
+        Map<Object, Object> value = redisTemplate.opsForHash().entries(key);
         log.info(CACHEMODEL + " hGetAll，key ={}  value = {}", key, value);
         return value;
     }
