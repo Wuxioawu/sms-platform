@@ -41,4 +41,5 @@ class SmsUserMapperTest {
     @Test
     void updateByPrimaryKey() {
     }
+
 }

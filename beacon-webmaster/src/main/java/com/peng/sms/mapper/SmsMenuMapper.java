@@ -3,6 +3,8 @@ package com.peng.sms.mapper;
 import com.peng.sms.entity.SmsMenu;
 import com.peng.sms.entity.SmsMenuExample;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -29,4 +31,6 @@ public interface SmsMenuMapper {
     int updateByPrimaryKeySelective(SmsMenu record);
 
     int updateByPrimaryKey(SmsMenu record);
+
+    List<Map<String, Object>> findMenuByUserId(@Param("userId") Integer id);
 }

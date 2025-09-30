@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/service/SmsMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/service/impl/SmsMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/test/java/com/peng/sms/mapper/SmsMenuMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/realm/ShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/realm/ShiroRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/controller/KaptchaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/controller/KaptchaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/SmsMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/SmsMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/test/java/com/peng/sms/mapper/SmsUserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/test/java/com/peng/sms/mapper/SmsUserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/controller/SmsUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/controller/SmsUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsMenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsMenuMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsMenuMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +28,8 @@
         <option value="Enum" />
         <option value="Exception" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -77,6 +82,7 @@
     "JUnit.MobileTransferMapperTest.findAll.executor": "Run",
     "JUnit.SearchServiceTest.exists.executor": "Run",
     "JUnit.SearchServiceTest.index.executor": "Run",
+    "JUnit.SmsMenuMapperTest.findMenuByUserId.executor": "Run",
     "JUnit.SmsUserMapperTest.insert.executor": "Run",
     "JUnit.SmsUserServiceTest.findByUsername.executor": "Run",
     "JUnit.TestData.insertDataToRedis.executor": "Run",
@@ -152,8 +158,8 @@
       <recent name="$PROJECT_DIR$/beacon-test/src/main/java/com/peng/sms/entity" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.peng.sms.service" />
       <recent name="com.peng.sms.mapper" />
+      <recent name="com.peng.sms.service" />
       <recent name="com.peng.sms.api.filter" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -170,7 +176,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SmsUserServiceTest.findByUsername">
+  <component name="RunManager" selected="JUnit.SmsMenuMapperTest.findMenuByUserId">
+    <configuration name="SmsMenuMapperTest.findMenuByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beacon-webmaster" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peng.sms.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.SmsMenuMapperTest" />
+      <option name="METHOD_NAME" value="findMenuByUserId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SmsUserMapperTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beacon-webmaster" />
       <extension name="coverage">
@@ -216,19 +238,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonitorStarterApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="beacon-monitor" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.peng.sms.MonitorStarterApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.peng.sms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WebMasterStarterApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="beacon-webmaster" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.peng.sms.WebMasterStarterApp" />
@@ -243,19 +252,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.SmsMenuMapperTest.findMenuByUserId" />
       <item itemvalue="JUnit.SmsUserMapperTest.insert" />
       <item itemvalue="JUnit.SmsUserServiceTest.findByUsername" />
       <item itemvalue="Spring Boot.CacheStartApp" />
-      <item itemvalue="Spring Boot.MonitorStarterApp" />
       <item itemvalue="Spring Boot.WebMasterStarterApp" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.WebMasterStarterApp" />
+        <item itemvalue="JUnit.SmsMenuMapperTest.findMenuByUserId" />
         <item itemvalue="JUnit.SmsUserServiceTest.findByUsername" />
         <item itemvalue="JUnit.SmsUserMapperTest.insert" />
         <item itemvalue="Spring Boot.CacheStartApp" />
-        <item itemvalue="Spring Boot.MonitorStarterApp" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +290,7 @@
       <workItem from="1758650996967" duration="29641000" />
       <workItem from="1758731397797" duration="30846000" />
       <workItem from="1758819906466" duration="27245000" />
-      <workItem from="1758914737453" duration="56402000" />
+      <workItem from="1758914737453" duration="62177000" />
     </task>
     <servers />
   </component>
@@ -373,24 +382,14 @@
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/realm/ShiroRealm.java</url>
           <line>37</line>
           <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/service/impl/SmsMenuServiceImpl.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
