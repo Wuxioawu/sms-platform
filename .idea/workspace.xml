@@ -5,68 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-monitor/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-monitor/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-push/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-push/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-search/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-search/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/ClientBusinessController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/entity/ClientBusiness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/entity/ClientBusinessExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/ClientBusinessMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/service/ClientBusinessService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/vo/ClientBusinessVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/vo/SearchSmsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/ClientBusinessMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e4e00ef-8f12-4f3f-a789-cd39f1330a53.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e4e00ef-8f12-4f3f-a789-cd39f1330a53.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/client/SearchClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/test/java/com/peng/sms/mapper/SmsRoleMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/beacon-api-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/surefire-reports/TEST-com.peng.sms.api.filter.CheckFilterContextTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/surefire-reports/com.peng.sms.api.filter.CheckFilterContextTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/target/test-classes/com/peng/sms/api/filter/CheckFilterContextTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/target/beacon-cache-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/target/classes/com/peng/sms/controller/CacheController.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/target/classes/com/peng/sms/controller/CacheController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/target/beacon-common-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-monitor/target/classes/com/peng/sms/task/MonitorClientBalanceTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-monitor/target/classes/com/peng/sms/task/MonitorClientBalanceTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-search/target/test-classes/com/peng/sms/service/SearchServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ChannelMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientBalanceMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientBusinessMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientChannelMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientSignMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/ClientTemplateMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/MobileAreaMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/MobileBlackMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/MobileDirtyWordMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/MobileTransferMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/target/test-classes/com/peng/sms/mapper/TestData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsMenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/WebMasterStarterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/WebMasterStarterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/service/impl/SmsRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/service/impl/SmsRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/WebMasterStarterApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/WebMasterStarterApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsRoleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/service/impl/SmsMenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/service/impl/SmsMenuServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +28,8 @@
         <option value="Enum" />
         <option value="Exception" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -134,6 +83,7 @@
     "JUnit.SearchServiceTest.exists.executor": "Run",
     "JUnit.SearchServiceTest.index.executor": "Run",
     "JUnit.SmsMenuMapperTest.findMenuByUserId.executor": "Run",
+    "JUnit.SmsRoleMapperTest.findRoleNameByUserId.executor": "Run",
     "JUnit.SmsUserMapperTest.insert.executor": "Run",
     "JUnit.SmsUserServiceTest.findByUsername.executor": "Run",
     "JUnit.TestData.insertDataToRedis.executor": "Run",
@@ -156,10 +106,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.APIStarterAPP (1).executor": "Run",
-    "Spring Boot.APIStarterAPP.executor": "Run",
+    "Spring Boot.APIStarterAPP.executor": "Debug",
     "Spring Boot.BeaconTestApplication.executor": "Run",
-    "Spring Boot.CacheStartApp.executor": "Run",
-    "Spring Boot.MonitorStarterApp.executor": "Run",
+    "Spring Boot.CacheStartApp.executor": "Debug",
+    "Spring Boot.MonitorStarterApp.executor": "Debug",
     "Spring Boot.PushStarterApp.executor": "Run",
     "Spring Boot.SearchStarterApp.executor": "Run",
     "Spring Boot.SmsGatewayStarterApp.executor": "Run",
@@ -227,40 +177,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SmsMenuMapperTest.findMenuByUserId">
-    <configuration name="SmsMenuMapperTest.findMenuByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="beacon-webmaster" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.peng.sms.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.SmsMenuMapperTest" />
-      <option name="METHOD_NAME" value="findMenuByUserId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SmsUserMapperTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="beacon-webmaster" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.peng.sms.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.SmsUserMapperTest" />
-      <option name="METHOD_NAME" value="insert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SmsUserServiceTest.findByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ClientBusinessServiceTest.findAll">
+    <configuration name="ClientBusinessServiceTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beacon-webmaster" />
       <extension name="coverage">
         <pattern>
@@ -269,8 +187,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.peng.sms.service" />
-      <option name="MAIN_CLASS_NAME" value="com.peng.sms.service.SmsUserServiceTest" />
-      <option name="METHOD_NAME" value="findByUsername" />
+      <option name="MAIN_CLASS_NAME" value="com.peng.sms.service.ClientBusinessServiceTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientBusinessServiceTest.findByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beacon-webmaster" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peng.sms.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.peng.sms.service" />
+      <option name="MAIN_CLASS_NAME" value="com.peng.sms.service.ClientBusinessServiceTest" />
+      <option name="METHOD_NAME" value="findByUserId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmsRoleMapperTest.findRoleNameByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beacon-webmaster" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peng.sms.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.peng.sms.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.peng.sms.mapper.SmsRoleMapperTest" />
+      <option name="METHOD_NAME" value="findRoleNameByUserId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -303,18 +253,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SmsMenuMapperTest.findMenuByUserId" />
-      <item itemvalue="JUnit.SmsUserMapperTest.insert" />
-      <item itemvalue="JUnit.SmsUserServiceTest.findByUsername" />
+      <item itemvalue="JUnit.ClientBusinessServiceTest.findAll" />
+      <item itemvalue="JUnit.ClientBusinessServiceTest.findByUserId" />
+      <item itemvalue="JUnit.SmsRoleMapperTest.findRoleNameByUserId" />
       <item itemvalue="Spring Boot.CacheStartApp" />
       <item itemvalue="Spring Boot.WebMasterStarterApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClientBusinessServiceTest.findAll" />
+        <item itemvalue="JUnit.ClientBusinessServiceTest.findByUserId" />
+        <item itemvalue="JUnit.SmsRoleMapperTest.findRoleNameByUserId" />
         <item itemvalue="Spring Boot.WebMasterStarterApp" />
-        <item itemvalue="JUnit.SmsMenuMapperTest.findMenuByUserId" />
-        <item itemvalue="JUnit.SmsUserServiceTest.findByUsername" />
-        <item itemvalue="JUnit.SmsUserMapperTest.insert" />
         <item itemvalue="Spring Boot.CacheStartApp" />
       </list>
     </recent_temporary>
@@ -341,7 +291,7 @@
       <workItem from="1758650996967" duration="29641000" />
       <workItem from="1758731397797" duration="30846000" />
       <workItem from="1758819906466" duration="27245000" />
-      <workItem from="1758914737453" duration="66029000" />
+      <workItem from="1758914737453" duration="67301000" />
     </task>
     <servers />
   </component>

@@ -14,8 +14,6 @@ public class SmsRoleServiceImpl implements SmsRoleService {
 
     @Override
     public Set<String> getRoleName(Integer userId) {
-//        Set<String> roleNameSet = roleMapper.findRoleNameByUserId(userId);
-//        return roleNameSet;
-        return null;
+        return roleMapper.findRoleNameByUserId(userId);
     }
 }
