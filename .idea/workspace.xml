@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/KaptchaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/config/ShiroConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsMenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsMenuMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsRoleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/realm/ShiroRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/realm/ShiroRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/realm/ShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/realm/ShiroRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/controller/KaptchaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/controller/KaptchaController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +108,7 @@
     "Spring Boot.SmsGatewayStarterApp.executor": "Run",
     "Spring Boot.StrategyStarterApp.executor": "Run",
     "Spring Boot.TestStartApp.executor": "Run",
-    "Spring Boot.WebMasterStarterApp.executor": "Run",
+    "Spring Boot.WebMasterStarterApp.executor": "Debug",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "deletionFromPopupRequiresConfirmation": "false",
@@ -284,7 +281,7 @@
       <workItem from="1758650996967" duration="29641000" />
       <workItem from="1758731397797" duration="30846000" />
       <workItem from="1758819906466" duration="27245000" />
-      <workItem from="1758914737453" duration="54617000" />
+      <workItem from="1758914737453" duration="56402000" />
     </task>
     <servers />
   </component>
@@ -370,15 +367,30 @@
           <line>26</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/beacon-push/src/main/java/com/peng/sms/PushStarterApp.java</url>
           <line>13</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/config/ShiroConfig.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="44" />
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/realm/ShiroRealm.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -391,6 +403,7 @@
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="request.getHeaderNames()" language="JAVA" />
+        <watch expression="smsUser" />
       </configuration>
     </watches-manager>
   </component>

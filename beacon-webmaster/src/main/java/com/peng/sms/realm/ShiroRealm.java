@@ -50,7 +50,7 @@ public class ShiroRealm extends AuthorizingRealm {
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(smsUser,smsUser.getPassword(),"shiroRealm");
         info.setCredentialsSalt(ByteSource.Util.bytes(smsUser.getSalt()));
 
-        return null;
+        return info;
     }
 
     @Override
