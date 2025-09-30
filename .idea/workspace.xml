@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/realm/ShiroRealm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e4e00ef-8f12-4f3f-a789-cd39f1330a53.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e4e00ef-8f12-4f3f-a789-cd39f1330a53.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/entity/SmsMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/entity/SmsRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/entity/SmsUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/SmsMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/SmsRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/SmsUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-webmaster/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/WebMasterStarterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/WebMasterStarterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/WebMasterStarterApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/WebMasterStarterApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/config/ShiroConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +284,7 @@
       <workItem from="1758650996967" duration="29641000" />
       <workItem from="1758731397797" duration="30846000" />
       <workItem from="1758819906466" duration="27245000" />
-      <workItem from="1758914737453" duration="49280000" />
+      <workItem from="1758914737453" duration="51194000" />
     </task>
     <servers />
   </component>

@@ -3,20 +3,69 @@
   <component name="PersistentConfig">
     <option name="historyConfigList">
       <map>
+        <entry key="sms_menu">
+          <value>
+            <Config>
+              <option name="annotationDAO" value="true" />
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java/com/peng/sms" />
+              <option name="daoName" value="SmsMenuMapper" />
+              <option name="daoPackage" value="mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java/com/peng/sms" />
+              <option name="modelName" value="SmsMenu" />
+              <option name="modelPackage" value="entity" />
+              <option name="name" value="sms_menu" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/beacon-webmaster" />
+              <option name="tableName" value="sms_menu" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="sms_role">
+          <value>
+            <Config>
+              <option name="annotationDAO" value="true" />
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java/com/peng/sms" />
+              <option name="daoName" value="SmsRoleMapper" />
+              <option name="daoPackage" value="mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java/com/peng/sms" />
+              <option name="modelName" value="SmsRole" />
+              <option name="modelPackage" value="entity" />
+              <option name="name" value="sms_role" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/beacon-webmaster" />
+              <option name="tableName" value="sms_role" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
         <entry key="sms_user">
           <value>
             <Config>
               <option name="annotationDAO" value="true" />
               <option name="comment" value="true" />
-              <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="SmsUserDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
-              <option name="modelMvnPath" value="src/main/java" />
+              <option name="daoMvnPath" value="src/main/java/com/peng/sms" />
+              <option name="daoName" value="SmsUserMapper" />
+              <option name="daoPackage" value="mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelMvnPath" value="src/main/java/com/peng/sms" />
               <option name="modelName" value="SmsUser" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="entity" />
               <option name="name" value="sms_user" />
-              <option name="needToStringHashcodeEquals" value="true" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
               <option name="primaryKey" value="id" />
@@ -25,7 +74,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mapper" />
             </Config>
           </value>
         </entry>
