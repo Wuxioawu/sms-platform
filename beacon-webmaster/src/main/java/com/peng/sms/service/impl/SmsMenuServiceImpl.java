@@ -3,7 +3,6 @@ package com.peng.sms.service.impl;
 import com.peng.sms.mapper.SmsMenuMapper;
 import com.peng.sms.service.SmsMenuService;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;

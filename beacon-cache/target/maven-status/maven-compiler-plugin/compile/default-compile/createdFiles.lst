@@ -1,2 +1,3 @@
 com/peng/sms/controller/TestController.class
+com/peng/sms/controller/CacheController.class
 com/peng/sms/CacheStartApp.class

@@ -21,6 +21,7 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   configuration:
+    local-cache-scope: STATEMENT
     map-underscore-to-camel-case: true
 shiro:
   loginUrl: /login.html

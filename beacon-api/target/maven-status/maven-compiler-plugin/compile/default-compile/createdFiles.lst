@@ -1,9 +1,15 @@
 com/peng/sms/api/filter/impl/TemplateCheckFilter.class
+com/peng/sms/api/advice/ApiExceptionHandler.class
+com/peng/sms/api/config/RabbitTemplateConfig.class
+com/peng/sms/api/config/RabbitTemplateConfig$2.class
 com/peng/sms/api/filter/CheckFilter.class
+com/peng/sms/api/config/RabbitMQConfig.class
+com/peng/sms/api/config/RabbitTemplateConfig$1.class
 com/peng/sms/api/filter/impl/FeeCheckFilter.class
 com/peng/sms/api/filter/impl/ApikeyCheckFilter.class
 com/peng/sms/api/form/SingleSendForm.class
 com/peng/sms/api/filter/impl/IPCheckFilter.class
+com/peng/sms/api/uitls/PhoneFormatCheckUtil.class
 com/peng/sms/api/vo/ResultVO.class
 com/peng/sms/api/uitls/R.class
 com/peng/sms/api/filter/impl/MobileCheckFilter.class
@@ -12,4 +18,5 @@ com/peng/sms/api/enums/SmsCodeEnum.class
 com/peng/sms/api/APIStarterAPP.class
 com/peng/sms/api/filter/CheckFilterContext.class
 com/peng/sms/api/controller/TestController.class
+com/peng/sms/api/client/BeaconCacheClient.class
 com/peng/sms/api/filter/impl/SignCheckFilter.class
