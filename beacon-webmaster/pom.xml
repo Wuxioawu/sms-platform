@@ -54,18 +54,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
-<!--        &lt;!&ndash;        create the verify code&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.github.axet</groupId>-->
-<!--            <artifactId>kaptcha</artifactId>-->
-<!--            <version>0.0.9</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash;        common module&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.peng.sms</groupId>-->
-<!--            <artifactId>beacon-common</artifactId>-->
-<!--            <version>0.0.1-SNAPSHOT</version>-->
-<!--        </dependency>-->
+        <!--        create the verify code-->
+        <dependency>
+            <groupId>com.github.axet</groupId>
+            <artifactId>kaptcha</artifactId>
+            <version>0.0.9</version>
+        </dependency>
+        <!--        common module-->
+        <dependency>
+            <groupId>com.peng.sms</groupId>
+            <artifactId>beacon-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 <!--        &lt;!&ndash;        SpringMVC &ndash;&gt;-->
 <!--        <dependency>-->
 <!--            <groupId>org.hibernate</groupId>-->

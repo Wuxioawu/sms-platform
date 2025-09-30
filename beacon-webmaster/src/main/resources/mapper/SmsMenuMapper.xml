@@ -19,10 +19,82 @@
     <result column="extend3" jdbcType="VARCHAR" property="extend3" />
     <result column="extend4" jdbcType="VARCHAR" property="extend4" />
   </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
   <sql id="Base_Column_List">
     id, `name`, parent_id, url, icon, `type`, sort, created, create_id, updated, update_id, 
     is_delete, extend1, extend2, extend3, extend4
   </sql>
+  <select id="selectByExample" parameterType="com.peng.sms.entity.SmsMenuExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from sms_menu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
@@ -32,6 +104,12 @@
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from sms_menu
     where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.peng.sms.entity.SmsMenuExample">
+    delete from sms_menu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.peng.sms.entity.SmsMenu" useGeneratedKeys="true">
     insert into sms_menu (`name`, parent_id, url, 
@@ -142,6 +220,90 @@
       </if>
     </trim>
   </insert>
+  <select id="countByExample" parameterType="com.peng.sms.entity.SmsMenuExample" resultType="java.lang.Long">
+    select count(*) from sms_menu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update sms_menu
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.name != null">
+        `name` = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.parentId != null">
+        parent_id = #{record.parentId,jdbcType=BIGINT},
+      </if>
+      <if test="record.url != null">
+        url = #{record.url,jdbcType=VARCHAR},
+      </if>
+      <if test="record.icon != null">
+        icon = #{record.icon,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null">
+        `type` = #{record.type,jdbcType=INTEGER},
+      </if>
+      <if test="record.sort != null">
+        sort = #{record.sort,jdbcType=INTEGER},
+      </if>
+      <if test="record.created != null">
+        created = #{record.created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.createId != null">
+        create_id = #{record.createId,jdbcType=BIGINT},
+      </if>
+      <if test="record.updated != null">
+        updated = #{record.updated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateId != null">
+        update_id = #{record.updateId,jdbcType=BIGINT},
+      </if>
+      <if test="record.isDelete != null">
+        is_delete = #{record.isDelete,jdbcType=TINYINT},
+      </if>
+      <if test="record.extend1 != null">
+        extend1 = #{record.extend1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.extend2 != null">
+        extend2 = #{record.extend2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.extend3 != null">
+        extend3 = #{record.extend3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.extend4 != null">
+        extend4 = #{record.extend4,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update sms_menu
+    set id = #{record.id,jdbcType=INTEGER},
+      `name` = #{record.name,jdbcType=VARCHAR},
+      parent_id = #{record.parentId,jdbcType=BIGINT},
+      url = #{record.url,jdbcType=VARCHAR},
+      icon = #{record.icon,jdbcType=VARCHAR},
+      `type` = #{record.type,jdbcType=INTEGER},
+      sort = #{record.sort,jdbcType=INTEGER},
+      created = #{record.created,jdbcType=TIMESTAMP},
+      create_id = #{record.createId,jdbcType=BIGINT},
+      updated = #{record.updated,jdbcType=TIMESTAMP},
+      update_id = #{record.updateId,jdbcType=BIGINT},
+      is_delete = #{record.isDelete,jdbcType=TINYINT},
+      extend1 = #{record.extend1,jdbcType=VARCHAR},
+      extend2 = #{record.extend2,jdbcType=VARCHAR},
+      extend3 = #{record.extend3,jdbcType=VARCHAR},
+      extend4 = #{record.extend4,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.peng.sms.entity.SmsMenu">
     update sms_menu
     <set>
