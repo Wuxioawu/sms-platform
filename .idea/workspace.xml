@@ -5,33 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155c1558-6dda-4609-b71c-9c7562ae0f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/entity/SmsMenuExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/entity/SmsRoleExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/entity/SmsUserExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/service/SmsUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/service/impl/SmsUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/test/java/com/peng/sms/mapper/SmsUserMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/test/java/com/peng/sms/service/SmsUserServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/entity/SmsUserExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/entity/SmsUserExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/entity/SmsUserExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/entity/SmsUserExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/service/SmsUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/service/impl/SmsUserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/target/test-classes/com/peng/sms/mapper/SmsUserMapperTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-webmaster/target/test-classes/com/peng/sms/service/SmsUserServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/KaptchaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/controller/SmsUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsMenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/mapper/SmsUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/realm/ShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/java/com/peng/sms/realm/ShiroRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/SmsMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/SmsMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/SmsRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/SmsRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/SmsUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/src/main/resources/mapper/SmsUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/config/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsMenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsMenuMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/mapper/SmsRoleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/realm/ShiroRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/com/peng/sms/realm/ShiroRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-webmaster/target/classes/mapper/SmsRoleMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +26,8 @@
         <option value="Enum" />
         <option value="Exception" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -272,9 +254,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.WebMasterStarterApp" />
         <item itemvalue="JUnit.SmsUserServiceTest.findByUsername" />
         <item itemvalue="JUnit.SmsUserMapperTest.insert" />
-        <item itemvalue="Spring Boot.WebMasterStarterApp" />
         <item itemvalue="Spring Boot.CacheStartApp" />
         <item itemvalue="Spring Boot.MonitorStarterApp" />
       </list>
@@ -302,7 +284,7 @@
       <workItem from="1758650996967" duration="29641000" />
       <workItem from="1758731397797" duration="30846000" />
       <workItem from="1758819906466" duration="27245000" />
-      <workItem from="1758914737453" duration="52644000" />
+      <workItem from="1758914737453" duration="54617000" />
     </task>
     <servers />
   </component>
