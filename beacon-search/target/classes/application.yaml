@@ -27,3 +27,10 @@ elasticsearch:
   hostAndPorts: 114.116.226.76:9200,localhost:9200
   username: elastic
   password: wupeng
+
+feign:
+  client:
+    config:
+      beacon-cache:
+        connectTimeout: 50000000
+        readTimeout: 10000000

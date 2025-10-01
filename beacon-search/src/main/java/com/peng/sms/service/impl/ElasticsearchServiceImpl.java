@@ -161,9 +161,8 @@ public class ElasticsearchServiceImpl implements SearchService {
         List<Map> rows = new ArrayList<>();
         for (SearchHit hit : resp.getHits().getHits()) {
             Map<String, Object> row = hit.getSourceAsMap();
-            List sendTime = (List) row.get("sendTime");
-            String sendTimeStr = listToDateString(sendTime);
-            row.put("sendTimeStr", sendTimeStr);
+
+            row.put("sendTimeStr", row.get("sendTime"));
             row.put("corpname", row.get("sign"));
 
             // Apply highlighting if present

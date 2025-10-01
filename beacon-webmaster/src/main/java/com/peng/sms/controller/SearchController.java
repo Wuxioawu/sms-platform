@@ -11,8 +11,8 @@ import com.peng.sms.util.R;
 import com.peng.sms.vo.ResultVO;
 import com.peng.sms.vo.SearchSmsVO;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.beanutils.BeanUtils;
 import org.apache.shiro.SecurityUtils;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,10 +20,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.util.*;
 
 @RestController
 @Slf4j
@@ -99,6 +99,9 @@ public class SearchController {
             SearchSmsVO vo = new SearchSmsVO();
             try {
                 BeanUtils.copyProperties(vo, row);
+                Instant instant = Instant.ofEpochMilli(Long.parseLong(vo.getSendTimeStr()));
+                ZonedDateTime dateTime = instant.atZone(ZoneId.systemDefault());
+                vo.setSendTimeStr(dateTime.toString());
             } catch (Exception e) {
                 e.printStackTrace();
             }
