@@ -84,6 +84,8 @@ The system is divided into four core service modules with clear responsibility b
 ├── search-service     # Query & analytics service (logging)
 └── common             # Shared components
 ```
+<img width="8364" height="3488" alt="whiteboard_exported_image (1)" src="https://github.com/user-attachments/assets/37731e41-c8db-4a15-8375-23bc762c1cb1" />
+
 
 ## Core Service Modules
 
