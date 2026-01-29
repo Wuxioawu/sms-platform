@@ -50,6 +50,7 @@ The goal of this project is **not just to “send SMS”**, but to build:
 > - **RabbitMQ** is responsible for traffic buffering and peak shaving  
 > - **Redis** handles hot data and counters  
 > - **Elasticsearch** stores massive SMS logs for querying and analysis
+<img width="7475" height="4439" alt="whiteboard_exported_image" src="https://github.com/user-attachments/assets/e72cdd79-5910-405f-84c3-ce76e58bfd8c" />
 
 ---
 
