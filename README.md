@@ -22,6 +22,9 @@ The goal of this project is **not just to “send SMS”**, but to build:
 
 > **A highly available, scalable, and maintainable enterprise-level SMS infrastructure platform**
 
+<img width="1245" height="609" alt="image" src="https://github.com/user-attachments/assets/d67bc504-b1e4-47f6-9de2-6798d3e39933" />
+
+
 ---
 
 ## Project Positioning
